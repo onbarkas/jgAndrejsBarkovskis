@@ -16,10 +16,17 @@ public class VowelChecker {
     }
 
     private static String isVowelWithIf(char enteredChar) {
-        if ((enteredChar == 'a') || (enteredChar == 'A') || (enteredChar == 'e')
-                || (enteredChar == 'E') || (enteredChar == 'i') || (enteredChar == 'I')
-                || (enteredChar == 'o') || (enteredChar == 'O') || (enteredChar == 'u')
-                || (enteredChar == 'U')) {
+        if (enteredChar == 'a'
+                || enteredChar == 'A'
+                || enteredChar == 'e'
+                || enteredChar == 'E'
+                || enteredChar == 'i'
+                || enteredChar == 'I'
+                || enteredChar == 'o'
+                || enteredChar == 'O'
+                || enteredChar == 'u'
+                || enteredChar == 'U')
+        {
             return "patskanis";
         }
         else {
