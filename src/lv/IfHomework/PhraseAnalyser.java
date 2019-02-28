@@ -2,8 +2,6 @@ package lv.IfHomework;
 
 public class PhraseAnalyser {
     String text = "Make education great again";
-    String result;
-
 
     public String analyse(){
                 if ((text.charAt(0) == 'M'
@@ -21,11 +19,10 @@ public class PhraseAnalyser {
                     && text.charAt(23) == 'a'
                     && text.charAt(24) == 'i'
                     && text.charAt(25) == 'n'){
-                result = "It Stands no change";
+                return "It Stands no change";
             } else
-            result = "It could be worse";
+            return "It could be worse";
         } else
-        {result = "It is fine, really";}
-        return result;
+        {return "It is fine, really";}
     }
 }
