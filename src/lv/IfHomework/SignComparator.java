@@ -1,7 +1,7 @@
 package lv.IfHomework;
 
 public class SignComparator {
-    int number = 0;
+    int number = 133;
     String result;
 
     public String compare(){
