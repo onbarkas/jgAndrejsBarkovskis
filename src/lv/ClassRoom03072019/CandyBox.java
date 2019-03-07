@@ -25,12 +25,12 @@ public class CandyBox {
         if (this == o) return true;
         if (o == null || this.getClass() != o.getClass()) return false;
         CandyBox candyBox = (CandyBox) o;
-        return this.amount == candyBox.amount
-                && this.name.equals(candyBox.name);
+        return Objects.equals(this.name,candyBox.name)
+                && this.amount == candyBox.amount;
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return Objects.hash(name, amount);
     }
 
