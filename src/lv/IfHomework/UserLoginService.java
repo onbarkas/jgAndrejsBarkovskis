@@ -5,9 +5,9 @@ public class UserLoginService {
     String userChecker;
     User userClass = new User();
 
-    public boolean login(String inputPassword, User user){
-        return login();
-    }
+    /*public boolean login(String inputPassword, User user){
+        return user;
+    }*/
 
     public void verify(){
         if (userClass.loginAttemptsLeft > 2) {
