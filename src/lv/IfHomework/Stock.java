@@ -3,8 +3,8 @@ package lv.IfHomework;
 public class Stock   {
     String company;
     double currentValue;
-    double max = currentValue;
-    double min = currentValue;
+    double min;
+    double max;
 
 
     public String getCompany(){
@@ -17,7 +17,10 @@ public class Stock   {
         return currentValue;
     }
 
-    public void setCurrentValue(double currentValue){this.currentValue = currentValue;}
+    public void setCurrentValue(double currentValue){
+        this.currentValue = currentValue;
+        min = currentValue;
+        max = currentValue;}
 
     public double getMax(){
         return max;
@@ -31,18 +34,18 @@ public class Stock   {
 
     public void setMin(double min){this.min = min;}
 
-    public void updatePrice() {
-        if (currentValue > max) {
-            max = currentValue;
+    public void updatePrice(double updateCurrentValue) {
+        if (updateCurrentValue > max) {
+            max = updateCurrentValue;
         }
-        if (currentValue < min) {
-            min = currentValue;
+        if (updateCurrentValue < min) {
+            min = updateCurrentValue;
         }
     }
-/*
-    public String printInformation(){
+
+    public void printInformation(){
             System.out.println("Current value = " + currentValue);
             System.out.println("Max = " + max);
             System.out.println("Min = " + min);
-    } */
+    }
 }

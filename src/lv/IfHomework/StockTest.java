@@ -7,13 +7,13 @@ public class StockTest {
         Stock IBM = new Stock();
         IBM.setCompany("IBM");
         IBM.setCurrentValue(150.00);
-        IBM.updatePrice();
         System.out.println(IBM.max + "jjajaja");
-        IBM.setCurrentValue(180);
-        IBM.updatePrice();
+        IBM.updatePrice(200);
         System.out.println(IBM.max + "jjajaja");
-        IBM.setCurrentValue(160);
-        IBM.updatePrice();
-        System.out.println(IBM.max + "jjajaja");
+        IBM.updatePrice(67);
+        System.out.println(IBM.min + "jjajaja");
+        IBM.updatePrice(32);
+        System.out.println(IBM.min + "jjajaja");
+        IBM.printInformation();
     }
 }
