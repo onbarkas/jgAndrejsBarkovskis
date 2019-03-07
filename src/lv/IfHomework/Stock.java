@@ -41,6 +41,7 @@ public class Stock   {
         if (updateCurrentValue < min) {
             min = updateCurrentValue;
         }
+        currentValue = updateCurrentValue;
     }
 
     public void printInformation(){
