@@ -6,8 +6,8 @@ public class UserLoginServiceTest {
         User userClass = new User();
 
         userLogin.login("Parole", "Lietotajs");
-        ///userClass.block();
-        ///userLogin.verify();
+        userClass.block();
+        userLogin.verify();
         System.out.println(userClass.loginAttemptsLeft);
         userClass.resetLoginAttepts();
         System.out.println(userClass.loginAttemptsLeft);

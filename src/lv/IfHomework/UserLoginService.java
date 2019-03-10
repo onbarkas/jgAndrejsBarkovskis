@@ -11,11 +11,12 @@ public class UserLoginService {
         if ((userClass.password.equals(inputPassword)) && (userClass.login.equals(user))) {
             System.out.println("Lietotajs un parole ievaditi veiksmigi");
             userClass.loginAttemptsLeft--;
+            System.out.println(userClass.loginAttemptsLeft);
         } else System.out.println("Nepareizais lietotaja vards vai parole");
     }
 
     public void verify() {
-        if (userClass.loginAttemptsLeft == 0) {
+        if (userClass.loginAttemptsLeft <= 0) {
             userClass.block();
             System.out.println("noblokets");
         } else if (userClass.blocked == true) {

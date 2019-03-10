@@ -10,6 +10,8 @@ public class User {
         loginAttemptsLeft = 3;
     }
     public void block(){
-        this.blocked = true;
+        blocked = true;
+        System.out.println("Noblokeju");
     }
+
 }
