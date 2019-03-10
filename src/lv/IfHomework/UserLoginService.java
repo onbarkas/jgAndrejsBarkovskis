@@ -10,13 +10,13 @@ public class UserLoginService {
     public void login(String inputPassword, String user) {
         if ((userClass.password.equals(inputPassword)) && (userClass.login.equals(user))) {
             System.out.println("Lietotajs un parole ievaditi veiksmigi");
+            userClass.loginAttemptsLeft--;
         } else System.out.println("Nepareizais lietotaja vards vai parole");
     }
 
     public void verify() {
-        if (userClass.loginAttemptsLeft > 2) {
+        if (userClass.loginAttemptsLeft == 0) {
             userClass.block();
-            userClass.loginAttemptsLeft += 1;
             System.out.println("noblokets");
         } else if (userClass.blocked == true) {
             System.out.println("Lietotajs ir noblokets");
