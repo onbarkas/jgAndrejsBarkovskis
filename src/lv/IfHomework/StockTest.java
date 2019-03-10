@@ -11,5 +11,6 @@ public class StockTest {
         IBM.updatePrice(149.82);
         IBM.updatePrice(150.12);
         IBM.printInformation();
+        System.out.println(IBM.getCompany());
     }
 }
