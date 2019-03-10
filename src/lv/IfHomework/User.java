@@ -4,7 +4,12 @@ public class User {
     private String login = "Lietotajs";
     private String password = "Parole";
     private int loginAttemptsLeft = 3;
-    boolean blocked = false;
+    private boolean blocked = false;
+
+    public User(){
+        setLoginAttemptsLeft(loginAttemptsLeft);
+    }
+
 
     public String getLogin() {
         return login;
@@ -14,7 +19,8 @@ public class User {
         this.login = login;
     }
 
-    public String getPassword(){
+
+    public String getPassword() {
         return password;
     }
 
@@ -28,6 +34,15 @@ public class User {
 
     public void setLoginAttemptsLeft(int loginAttemptsLeft) {
         this.loginAttemptsLeft = loginAttemptsLeft;
+
+    }
+
+    public boolean getBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(boolean blocked) {
+        this.blocked = blocked;
     }
 
     public void resetLoginAttepts() {
