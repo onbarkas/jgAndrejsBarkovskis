@@ -3,12 +3,8 @@ package lv.IfHomework;
 public class User {
     private String login = "Lietotajs";
     private String password = "Parole";
-    private int loginAttemptsLeft = 3;
+    private int loginAttemptsLeft;
     private boolean blocked = false;
-
-    public User(){
-        setLoginAttemptsLeft(loginAttemptsLeft);
-    }
 
 
     public String getLogin() {
@@ -51,7 +47,7 @@ public class User {
 
 
     public void block() {
-        blocked = true;
+        setBlocked(true);
         System.out.println("Noblokeju");
     }
 
