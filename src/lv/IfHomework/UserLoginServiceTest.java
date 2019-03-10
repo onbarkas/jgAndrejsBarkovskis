@@ -6,6 +6,7 @@ public class UserLoginServiceTest {
         User userClass = new User();
 
         userLogin.login("Parole", "Lietotajs");
+        System.out.println(userClass.getPassword());
         userClass.block();
         userLogin.verify();
         System.out.println(userClass.loginAttemptsLeft);

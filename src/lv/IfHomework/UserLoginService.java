@@ -7,8 +7,8 @@ public class UserLoginService {
     ///  private String user;
     User userClass = new User();
 
-    public void login(String inputPassword, String user) {
-        if ((userClass.password.equals(inputPassword)) && (userClass.login.equals(user))) {
+   public void login(String inputPassword, String user) {
+        if ((userClass.getPassword().equals(inputPassword)) && (userClass.getLogin().equals(user))) {
             System.out.println("Lietotajs un parole ievaditi veiksmigi");
             userClass.loginAttemptsLeft--;
             System.out.println(userClass.loginAttemptsLeft);
