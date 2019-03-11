@@ -4,7 +4,7 @@ public class User {
     private String login = "Lietotajs";
     private String password = "Parole";
     private int loginAttemptsLeft;
-    private boolean blocked = false;
+    private boolean blocked = true;
 
 
     public String getLogin() {
