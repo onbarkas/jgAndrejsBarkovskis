@@ -9,11 +9,10 @@ public class SmartPhoneTest {
         iPhoneXs.setScreenSize(6.5);
 
         SmartPhone iPhoneX = new SmartPhone();
-        iPhoneXs.setColor("Space grey");
-        iPhoneXs.setManufactor("Apple");
-        iPhoneXs.setProcessorType("Hexa-Core");
-        iPhoneXs.setScreenSize(6.5);
-        System.out.println(iPhoneX.getColor());
+        iPhoneX.setColor("Space grey");
+        iPhoneX.setManufactor("Apple");
+        iPhoneX.setProcessorType("Hexa-Core");
+        iPhoneX.setScreenSize(5.8);
 
         System.out.println(iPhoneXs);
         System.out.println("VS");
