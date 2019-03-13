@@ -1,5 +1,7 @@
 package lv.ObjektiAtminja;
 
+import java.util.Objects;
+
 public class TV {
     private int currentChanel, currentVolumeLevel;
     private String manufacturer;
@@ -47,12 +49,12 @@ public class TV {
         currentChanel--;
     }
 
-    public void increaseChanel(){
+    public void increaseVolume(){
         if (turnedOn == true)
         currentVolumeLevel++;
     }
 
-    public void decreaseChanel(){
+    public void decreaseVolume(){
         if (turnedOn == true)
         currentVolumeLevel--;
     }
@@ -65,5 +67,29 @@ public class TV {
         turnedOn = false;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TV)) return false;
+        TV tv = (TV) o;
+        return getCurrentChanel() == tv.getCurrentChanel() &&
+                getCurrentVolumeLevel() == tv.getCurrentVolumeLevel() &&
+                isTurnedOn() == tv.isTurnedOn() &&
+                getManufacturer().equals(tv.getManufacturer());
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getCurrentChanel(), getCurrentVolumeLevel(), getManufacturer(), isTurnedOn());
+    }
+
+    @Override
+    public String toString() {
+        return "TV{" +
+                "currentChanel=" + currentChanel +
+                ", currentVolumeLevel=" + currentVolumeLevel +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", turnedOn=" + turnedOn +
+                '}';
+    }
 }
