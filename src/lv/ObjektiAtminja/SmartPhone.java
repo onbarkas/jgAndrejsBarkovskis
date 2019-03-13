@@ -3,9 +3,7 @@ package lv.ObjektiAtminja;
 import java.util.Objects;
 
 public class SmartPhone {
-    private String manufactor;
-    private String color;
-    private String processorType;
+    private String manufactor, color, processorType;
     private double screenSize;
 
     public String getManufactor() {
