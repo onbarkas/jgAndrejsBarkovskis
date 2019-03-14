@@ -3,14 +3,14 @@ package lv.ObjektiAtminja;
 import java.util.Objects;
 
 public class Company {
-    private String company, registrationNumber;
+    private String name, registrationNumber;
 
     public String getName() {
-        return company;
+        return name;
     }
 
     public void setName(String name) {
-        this.company = company;
+        this.name = name;
     }
 
     public String getRegistrationNumber() {
@@ -38,7 +38,7 @@ public class Company {
     @Override
     public String toString() {
         return "Company{" +
-                "company='" + company + '\'' +
+                "company='" + name + '\'' +
                 ", registrationNumber='" + registrationNumber + '\'' +
                 '}';
     }
