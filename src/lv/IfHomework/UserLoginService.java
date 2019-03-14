@@ -1,14 +1,17 @@
 package lv.IfHomework;
 
-import java.util.Objects;
-
 public class UserLoginService {
-    User userClass = new User();
+    private User userClass;
 
-   public void login(String inputPassword, String user) {
+    public UserLoginService(User userClass) {
+        this.userClass = userClass;
+    }
+
+    public void login(String inputPassword, String user) {
         if ((userClass.getPassword().equals(inputPassword)) && (userClass.getLogin().equals(user))) {
             System.out.println("Lietotajs un parole ievaditi veiksmigi");
-            userClass.setLoginAttemptsLeft(70);
+            userClass.setLoginAttemptsLeft(-1);
+
             System.out.println(userClass.getLoginAttemptsLeft());
         } else System.out.println("Nepareizais lietotaja vards vai parole");
     }
@@ -19,11 +22,11 @@ public class UserLoginService {
             System.out.println("noblokets");
         } else if (userClass.getBlocked() == true) {
             System.out.println("Lietotajs ir noblokets");
-        } else System.out.println("viss chotka");
-        System.out.println(userClass.getLoginAttemptsLeft());
+        } else {
+            System.out.println("viss chotka");
+        }
 
     }
-
 
 }
 
