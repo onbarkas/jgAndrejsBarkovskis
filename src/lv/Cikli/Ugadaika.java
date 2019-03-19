@@ -12,9 +12,16 @@ public class Ugadaika {
     public void numberCheck(){
         System.out.println("Ievadiet numuru no 1 lidz 100");
         scanner();
-        if ((input > 0) && (input <= 100)){
+        random();
+        for (int i=input; input!=randomNumber; i++){
+            System.out.println("Ievadiet numuru no 1 lidz 100");
+            scanner();
+            random();
+            //if ((input > 0) && (input <= 100)){
 
-        } else {System.out.println("Ievadiet numuru no 1 lidz 100");}
+           // } else {System.out.println("Ievadiet numuru no 1 lidz 100");}
+        }
+
     }
 
     public void scanner(){

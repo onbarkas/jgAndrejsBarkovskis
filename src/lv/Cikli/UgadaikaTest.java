@@ -6,7 +6,5 @@ public class UgadaikaTest {
         Ugadaika ugadaika = new Ugadaika();
 
         ugadaika.numberCheck();
-        ugadaika.random();
-        System.out.println(ugadaika.randomNumber);
     }
 }
