@@ -7,14 +7,14 @@ public class Ugadaika {
     public int inputInt;
     public String inputString;
     public int randomNumber;
-    public int random = 101;
+    public int rangeMax = 101;
     Scanner scanner = new Scanner(System.in);
     Random randomGenerator = new Random();
 
     public void numberCheck() {
         System.out.println("Ievadiet numuru no 1 lidz 100");
         scannerInt();
-        randomNumber = randomGenerator.nextInt(random);
+        randomNumber = randomGenerator.nextInt(rangeMax);
         System.out.println(randomNumber);
         checkLoop();
     }
@@ -24,7 +24,7 @@ public class Ugadaika {
             System.out.println("ievadiet, skaitlis ir lielaks, vienads vai mazaks");
             scannerString();
             if (inputString.equals("lielaks")) {
-                randomNumber = randomGenerator.nextInt((random - inputInt) + 1) + inputInt;
+                randomNumber = randomGenerator.nextInt((rangeMax - inputInt) + 1) + inputInt;
                 System.out.println(randomNumber);
             }
 
