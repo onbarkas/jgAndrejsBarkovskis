@@ -4,35 +4,50 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Ugadaika {
-    public int input;
+    public int inputInt;
+    public String inputString;
     public int randomNumber;
+    public int random = 101;
     Scanner scanner = new Scanner(System.in);
     Random randomGenerator = new Random();
 
-    public void numberCheck(){
+    public void numberCheck() {
         System.out.println("Ievadiet numuru no 1 lidz 100");
-        scanner();
-        random();
-        for (int i=input; input!=randomNumber; i++){
-            System.out.println("Ievadiet numuru no 1 lidz 100");
-            scanner();
-            random();
-            //if ((input > 0) && (input <= 100)){
+        scannerInt();
+        randomNumber = randomGenerator.nextInt(random);
+        System.out.println(randomNumber);
+        System.out.println("ievadiet, skaitlis ir lielaks, vienads vai mazaks");
+        scannerString();
+       //
+      //  System.out.println(randomNumber);
+        for (int i = 0; !inputString.equals("vienads"); i++) {
+            System.out.println("ievadiet, skaitlis ir lielaks, vienads vai mazaks");
+            scannerString();
+            if (inputString.equals("lielaks")) {
+                randomNumber = randomGenerator.nextInt((random - inputInt) + 1) + inputInt;
+                System.out.println(randomNumber);
+            }
 
-           // } else {System.out.println("Ievadiet numuru no 1 lidz 100");}
+            if (inputString.equals("vienads")) {
+                System.out.println("Jus uzminejat");
+                break;
+            }
+
+            if (inputString.equals("mazaks")) {
+                randomNumber = randomGenerator.nextInt((random - inputInt) + 1) + inputInt;
+                System.out.println(randomNumber);
+            }
         }
 
     }
 
-    public void scanner(){
-        input = scanner.nextInt();
+    public void scannerInt() {
+        inputInt = scanner.nextInt();
     }
 
-    public void random(){
-        randomNumber = randomGenerator.nextInt(101);
+    public void scannerString() {
+        inputString = scanner.next();
     }
-
-
 
 
 }
