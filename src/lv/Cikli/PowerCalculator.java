@@ -11,10 +11,15 @@ public class PowerCalculator {
         this.sum = sum;
     }
 
-    public int pow(int number, int power) {
-        for (int i = 1; i <= power; i++) {
-            sum=sum*number;
-        }return sum;
+    public void pow(int number, int power) {
+        if ((number > 0) && (power > 0)) {
+            for (int i = 1; i <= power; i++) {
+                sum = sum * number;
+            }
+            System.out.println(sum);
+        } else {
+            System.out.println("Var but tikai pozitivie skaitli");
+        }
 
     }
 }
