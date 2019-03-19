@@ -34,9 +34,10 @@ public class Ugadaika {
             }
 
             if (inputString.equals("mazaks")) {
-                randomNumber = randomGenerator.nextInt((random - inputInt) + 1) + inputInt;
+                randomNumber = randomGenerator.nextInt((inputInt - 0) + 1) + 0;
                 System.out.println(randomNumber);
             }
+            inputInt=randomNumber;
         }
 
     }
