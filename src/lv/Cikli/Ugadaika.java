@@ -7,7 +7,7 @@ public class Ugadaika {
     private int inputInt;
     private String inputString;
     private int randomNumber;
-    private int rangeMax = 101;
+    private int rangeMax = 100;
     Scanner scanner = new Scanner(System.in);
     Random randomGenerator = new Random();
 
@@ -44,14 +44,21 @@ public class Ugadaika {
     }
 
     public void numberCheck() {
-        System.out.println("Ievadiet numuru no 1 lidz 100");
-        scannerInt();
+        userNumberInput();
         randomNumber = randomGenerator.nextInt((rangeMax - 0) + 1) + 0;
         System.out.println(randomNumber);
         checkLoop();
     }
 
-    public void checkLoop() {
+    private void userNumberInput() {
+        do {
+            System.out.println("Ievadiet numuru no 1 lidz 100");
+            scannerInt();
+        }
+        while ( (inputInt < 0) || (inputInt > 100));
+    }
+
+    private void checkLoop() {
         do {
             System.out.println("ievadiet, skaitlis ir lielaks, vienads vai mazaks");
             scannerString();
@@ -69,11 +76,11 @@ public class Ugadaika {
         System.out.println("Programma uzmineja skaitli");
     }
 
-    public void scannerInt() {
+    private void scannerInt() {
         inputInt = scanner.nextInt();
     }
 
-    public void scannerString() {
+    private void scannerString() {
         inputString = scanner.next();
     }
 
