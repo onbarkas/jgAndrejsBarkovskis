@@ -16,11 +16,11 @@ public class Ugadaika {
         scannerInt();
         randomNumber = randomGenerator.nextInt(random);
         System.out.println(randomNumber);
-        System.out.println("ievadiet, skaitlis ir lielaks, vienads vai mazaks");
-        scannerString();
-       //
-      //  System.out.println(randomNumber);
-        for (int i = 0; !inputString.equals("vienads"); i++) {
+        checkLoop();
+    }
+
+    public void checkLoop() {
+        do{
             System.out.println("ievadiet, skaitlis ir lielaks, vienads vai mazaks");
             scannerString();
             if (inputString.equals("lielaks")) {
@@ -28,18 +28,13 @@ public class Ugadaika {
                 System.out.println(randomNumber);
             }
 
-            if (inputString.equals("vienads")) {
-                System.out.println("Jus uzminejat");
-                break;
-            }
-
             if (inputString.equals("mazaks")) {
                 randomNumber = randomGenerator.nextInt((inputInt - 0) + 1) + 0;
                 System.out.println(randomNumber);
             }
-            inputInt=randomNumber;
-        }
-
+            inputInt = randomNumber;
+        } while (!inputString.equals("vienads"));
+        System.out.println("Programma uzmineja skaitli");
     }
 
     public void scannerInt() {
