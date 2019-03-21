@@ -1,5 +1,7 @@
 package lv.ClassRooom03212019Array;
 
+import java.util.SplittableRandom;
+
 public class CardDeck {
 
     private static final String[] SUIT_ARR = {"s", "h", "d", "c"};
@@ -12,14 +14,33 @@ public class CardDeck {
     }
 
     private void populateDeck() {
-
+        int counter = 0;
+        for (String suit : SUIT_ARR){
+            for (String value : VALUE_ARR){
+                deck[counter++] = suit + value;
+            }
+        }
     }
 
     public void shuffle(){
 
     }
 
-    public void printy(){
+    public void print(){
+        //for(String card :deck){
+        //    System.out.print("  " + card);
+       // }
 
+        for (int i=0; i<deck.length; i++){
+            if (isNextSuit(i)){
+                System.out.println();
+            } else{
+                System.out.print(" " + deck[i] + " ");
+            }
+        }
+    }
+
+    private boolean isNextSuit(int i) {
+        return i % (VALUE_ARR.length) == 0;
     }
 }
