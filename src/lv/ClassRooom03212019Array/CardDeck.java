@@ -1,5 +1,6 @@
 package lv.ClassRooom03212019Array;
 
+import java.util.Random;
 import java.util.SplittableRandom;
 
 public class CardDeck {
@@ -23,7 +24,12 @@ public class CardDeck {
     }
 
     public void shuffle(){
+        Random randomGenerator = new Random();
+        int shuffleCount = 1000;
+    }
 
+    private int generateNumber (Random randomGenerator){
+        return randomGenerator.ints(0,-1).findFirst().getAsInt();
     }
 
     public void print(){
