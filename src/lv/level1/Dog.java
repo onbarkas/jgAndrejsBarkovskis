@@ -1,4 +1,4 @@
-package lv.homework.lesson2;
+package lv.level1;
 
 public class Dog {
 
