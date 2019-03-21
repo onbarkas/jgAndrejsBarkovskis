@@ -1,4 +1,4 @@
-package lv.level1;
+package lv.homework.lesson3;
 
 public class calculateArea {
     public static void main(String[] args) {

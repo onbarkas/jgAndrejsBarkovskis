@@ -1,4 +1,4 @@
-package lv.homework.lesson3;
+package lv.level1;
 
 public class CalculatorTest {
     public static void main(String[] args) {

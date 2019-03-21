@@ -1,4 +1,4 @@
-package lv.level2;
+package lv.homework.lesson3;
 
 public class Car {
     private String color, manufacturer;

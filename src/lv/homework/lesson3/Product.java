@@ -1,4 +1,4 @@
-package lv.level3;
+package lv.homework.lesson3;
 
 public class Product {
     private String name;

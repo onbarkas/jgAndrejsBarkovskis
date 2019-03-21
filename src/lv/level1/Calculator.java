@@ -1,4 +1,4 @@
-package lv.homework.lesson3;
+package lv.level1;
 
 public class Calculator {
     int sum(int firstNumber, int secondNumber){

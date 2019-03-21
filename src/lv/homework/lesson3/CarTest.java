@@ -1,4 +1,4 @@
-package lv.level2;
+package lv.homework.lesson3;
 
 public class CarTest {
     public static void main(String[] args) {
