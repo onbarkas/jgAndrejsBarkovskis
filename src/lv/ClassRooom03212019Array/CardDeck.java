@@ -26,6 +26,19 @@ public class CardDeck {
     public void shuffle(){
         Random randomGenerator = new Random();
         int shuffleCount = 1000;
+
+        while (shuffleCount > 0) {
+            int index1 = generateNumber(randomGenerator);
+            int index2 = generateNumber(randomGenerator);
+
+            String card1 = deck[index1];
+            String card2 = deck[index1];
+
+            deck[index1] = card2;
+            deck[index2] = card1;
+
+            shuffleCount--;
+        }
     }
 
     private int generateNumber (Random randomGenerator){
