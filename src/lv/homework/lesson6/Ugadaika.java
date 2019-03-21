@@ -1,4 +1,4 @@
-package lv.Cikli;
+package lv.homework.lesson6;
 
 import java.util.Random;
 import java.util.Scanner;

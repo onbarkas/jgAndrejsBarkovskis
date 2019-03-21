@@ -1,4 +1,4 @@
-package lv.Cikli;
+package lv.homework.lesson6;
 
 public class NumberService {
     int sum;
