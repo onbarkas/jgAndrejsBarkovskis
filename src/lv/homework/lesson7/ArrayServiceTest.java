@@ -7,5 +7,9 @@ public class ArrayServiceTest {
         arrayService.fillArrayWithRandomNumbers();
         arrayService.printArrayToConsole();
         arrayService.sumInArray();
+        arrayService.sortArray();
+        arrayService.printArrayToConsole();
+        arrayService.swap();
+        arrayService.printArrayToConsole();
     }
 }
