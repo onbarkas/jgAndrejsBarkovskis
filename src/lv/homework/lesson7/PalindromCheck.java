@@ -24,11 +24,7 @@ public class PalindromCheck {
             array[i] = new StringBuilder(arrayReversed[i]).reverse().toString().toLowerCase();
         }
 
-        do {
-            System.out.println("Ievadiet rindas numuru no 0 lidz " + (array.length-1) + ", kuru gribat parbaudit");
-            inputInt = scanner.nextInt();
-
-        } while ((inputInt < 0) || (inputInt > 4));
+        inputInt = inputChecker(scanner, array);
 
         System.out.println(array[inputInt]);
         System.out.println(arrayReversed[inputInt]);
@@ -39,5 +35,14 @@ public class PalindromCheck {
         }
 
 
+    }
+
+    private int inputChecker(Scanner scanner, String[] array) {
+        int inputInt;
+        do {
+            System.out.println("Ievadiet rindas numuru no 0 lidz " + (array.length-1) + ", kuru gribat parbaudit");
+            inputInt = scanner.nextInt();
+        } while ((inputInt < 0) || (inputInt > 4));
+        return inputInt;
     }
 }
