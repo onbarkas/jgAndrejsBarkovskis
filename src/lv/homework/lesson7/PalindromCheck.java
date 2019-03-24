@@ -1,13 +1,14 @@
 package lv.homework.lesson7;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class PalindromCheck {
     public void isPalindrome() {
-     //   int inputInt;
+        int inputInt;
         Scanner scanner = new Scanner(System.in);
-        int inputInt = scanner.nextInt();
+
         String[] array = new String[5];
         String[] arrayReversed = new String[5];
         array[0] = "racecar";
@@ -16,20 +17,29 @@ public class PalindromCheck {
         array[3] = "summus";
         array[4] = "auto";
 
+        System.out.println(Arrays.toString(array));
 
-      //  do {
-     //       System.out.println("Ievadiet rindas numuru no 0 lidz" + array.length + ", kuru gribat parbaudit");
-    //    } while ( (inputInt < 0) || (inputInt > 5));
-
-
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             arrayReversed[i] = new StringBuilder(array[i]).reverse().toString();
         }
 
-        if (array[1].equals(arrayReversed[1])) {
-            System.out.println("sssssss");
+
+
+        do {
+            System.out.println("Ievadiet rindas numuru no 0 lidz " + array.length + ", kuru gribat parbaudit");
+            inputInt = scanner.nextInt();
+
+        } while ((inputInt < 0) || (inputInt > 4));
+
+        System.out.println(array[inputInt]);
+        System.out.println(arrayReversed[inputInt]);
+        if (array[inputInt].equals(arrayReversed[inputInt])) {
+            System.out.println("ir");
         } else {
-            System.out.println("aaaa");
+            System.out.println("nav");
         }
+
+
+
     }
 }
