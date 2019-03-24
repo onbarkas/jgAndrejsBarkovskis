@@ -23,7 +23,6 @@ public class PalindromCheck {
         inputInt = inputChecker(scanner, array);
 
         return (array[inputInt].equals(arrayReversed[inputInt]));
-
     }
 
     private void listOfArray(String[] array) {
