@@ -1,7 +1,6 @@
 package lv.homework.lesson7;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Random;
 
 public class ArrayService {
@@ -38,7 +37,6 @@ public class ArrayService {
         Arrays.sort(array1d);
     }
 
-
     public void swap() {
         for (int i = 0; i < array1d.length; i++) {
             array1d[i] = -array1d[i];
@@ -47,8 +45,6 @@ public class ArrayService {
         for (int i = 0; i < array1d.length; i++) {
             array1d[i] = -array1d[i];
         }
-
-
     }
 
 }
