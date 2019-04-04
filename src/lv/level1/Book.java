@@ -1,7 +1,7 @@
 package lv.level1;
 
 public class Book {
-    private String autor, bookName;
+    private String autor, bookName;  //gramatikas kļūda
     private int bookYear, bookPages;
 
     public String getBookName() {
@@ -14,11 +14,11 @@ public class Book {
 
     public String getAutor() {
         return autor;
-    }
+    } //gramatikas kļūda
 
     public void setAutor(String autor) {
         this.autor = autor;
-    }
+    } //gramatikas kļūda
 
     public int getBookYear() {
         return bookYear;

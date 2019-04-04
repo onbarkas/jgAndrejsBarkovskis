@@ -1,5 +1,6 @@
 package lv.homework.lesson3;
 
+//Ok
 public class Car {
     private String color, manufacturer;
     private int year;

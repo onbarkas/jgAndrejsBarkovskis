@@ -1,5 +1,6 @@
 package lv.homework.lesson6;
 
+//Ok, ctrl+alt+l
 public class CarTest {
     public static void main(String[] args) {
         Car car = new Car();

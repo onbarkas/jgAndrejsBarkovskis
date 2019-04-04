@@ -36,12 +36,14 @@ public class Employee {
         if (this == o) return true;
         if (!(o instanceof Employee)) return false;
         Employee employee = (Employee) o;
+        //neizmantot geterus šeit
         return Double.compare(employee.getSalary(), getSalary()) == 0 &&
                 getContactNumber().equals(employee.getContactNumber()) &&
                 getDepartment().equals(employee.getDepartment());
     }
 
     @Override
+    //neizmantot geterus šeit
     public int hashCode() {
         return Objects.hash(getContactNumber(), getSalary(), getDepartment());
     }

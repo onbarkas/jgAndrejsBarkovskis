@@ -3,7 +3,7 @@ package lv.homework.lesson5;
 import java.util.Objects;
 
 public class Department {
-    private String name, company;
+    private String name, company; //comapny jābūt tipam "Company"
 
     public String getName() {
         return name;
@@ -26,6 +26,7 @@ public class Department {
         if (this == o) return true;
         if (!(o instanceof Department)) return false;
         Department that = (Department) o;
+        //neizmantot geterus šeit
         return getName().equals(that.getName()) &&
                 getCompany().equals(that.getCompany());
     }
@@ -33,7 +34,7 @@ public class Department {
     @Override
     public int hashCode() {
         return Objects.hash(getName(), getCompany());
-    }
+    } //neizmantot geterus šeit
 
     @Override
     public String toString() {

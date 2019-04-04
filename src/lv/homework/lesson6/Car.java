@@ -45,12 +45,16 @@ public class Car {
     }
 
     public boolean isDriving() {
+        //var daudz īsāk
+        //return currentSpeed > 0
         if (currentSpeed > 0) {
             return true;
         } else return false;
     }
 
     public boolean canAccelerate() {
+        //var daudz īsāk
+        //return currentSpeed < maxSpeed
         if (currentSpeed < maxSpeed) {
             return true;
         } else return false;

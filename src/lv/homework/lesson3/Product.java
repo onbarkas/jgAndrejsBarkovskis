@@ -1,5 +1,6 @@
 package lv.homework.lesson3;
 
+//Ok
 public class Product {
     private String name;
     private double regularPrice, discount;
@@ -29,7 +30,7 @@ public class Product {
     }
 
     public double calculateActualPrice(){
-        double calculatedPrice = regularPrice - regularPrice * discount / 100;
+        double calculatedPrice = regularPrice - regularPrice * discount / 100; //nav nepieciešams atsevišķs mainīgas var rakstīt uzreiz "return"
         return calculatedPrice;
     }
 

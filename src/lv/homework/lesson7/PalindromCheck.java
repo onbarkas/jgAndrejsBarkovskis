@@ -4,6 +4,8 @@ package lv.homework.lesson7;
 import java.util.Scanner;
 
 public class PalindromCheck {
+
+    //metodei ir janodod pārbaudāmā rinda String[]
     public boolean isPalindrome() {
         int inputInt;
         Scanner scanner = new Scanner(System.in);

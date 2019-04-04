@@ -2,6 +2,7 @@ package lv.homework.lesson5;
 
 import java.util.Objects;
 
+//ctrl + alt + l
 public class TV {
     private int currentChanel, currentVolumeLevel;
     private String manufacturer;
@@ -72,6 +73,7 @@ public class TV {
         if (this == o) return true;
         if (!(o instanceof TV)) return false;
         TV tv = (TV) o;
+        //neizmanto geterus
         return getCurrentChanel() == tv.getCurrentChanel() &&
                 getCurrentVolumeLevel() == tv.getCurrentVolumeLevel() &&
                 isTurnedOn() == tv.isTurnedOn() &&
@@ -80,6 +82,7 @@ public class TV {
 
     @Override
     public int hashCode() {
+        //neizmanto geterus
         return Objects.hash(getCurrentChanel(), getCurrentVolumeLevel(), getManufacturer(), isTurnedOn());
     }
 
