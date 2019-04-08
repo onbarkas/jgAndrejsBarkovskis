@@ -12,15 +12,15 @@ public class CarTest {
         System.out.println(car.getModel() + " " + car.getColor() + " " + car.getCurrentSpeed());
         if (car.isDriving()) {
             System.out.println("Mashina brauc");
-        } else{
+        } else {
             System.out.println("Masina nebrauc");
         }
         car.slowDown();
         System.out.println("Jauns atrums ir " + car.getCurrentSpeed());
 
         if (car.canAccelerate()) {
-            System.out.println("Mashina var braukt par " + (car.getMaxSpeed()-car.getCurrentSpeed() + " atrak"));
-        } else{
+            System.out.println("Mashina var braukt par " + (car.getMaxSpeed() - car.getCurrentSpeed() + " atrak"));
+        } else {
             System.out.println("Masina nevar braukt atrak");
         }
     }
