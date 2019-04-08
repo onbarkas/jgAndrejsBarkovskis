@@ -1,7 +1,7 @@
 package lv.training;
 
 public class Moderator extends User{
-    public void blockPost(){
+    protected void blockPost(){
         System.out.println("Blocking...");
     }
 }
