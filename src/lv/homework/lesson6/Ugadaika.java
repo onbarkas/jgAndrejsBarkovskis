@@ -45,7 +45,7 @@ public class Ugadaika {
 
     public void numberCheck() {
         userNumberInput();
-        randomNumber = randomGenerator.nextInt((rangeMax - 0) + 1) + 0;
+        randomNumber = randomGenerator.nextInt((rangeMax - 0) + 1) + 0; //šo izensam atsevišķā metodē
         System.out.println(randomNumber);
         checkLoop();
     }
@@ -55,20 +55,22 @@ public class Ugadaika {
             System.out.println("Ievadiet numuru no 1 lidz 100");
             scannerInt();
         }
-        while ( (inputInt < 0) || (inputInt > 100));
+        while ( (inputInt < 0) || (inputInt > 100)); //par daudz iekavu
     }
 
     private void checkLoop() {
         do {
             System.out.println("ievadiet, skaitlis ir lielaks, vienads vai mazaks");
             scannerString();
+
+            //lietojam konstrukciju if-else if-else, jo var bū vai nu viens stāvoklis vai otrs
             if (inputString.equals("lielaks")) {
-                randomNumber = randomGenerator.nextInt((rangeMax - inputInt) + 1) + inputInt;
+                randomNumber = randomGenerator.nextInt((rangeMax - inputInt) + 1) + inputInt; //izsaucam metodi
                 System.out.println(randomNumber);
             }
 
             if (inputString.equals("mazaks")) {
-                randomNumber = randomGenerator.nextInt((inputInt - 0) + 1) + 0;
+                randomNumber = randomGenerator.nextInt((inputInt - 0) + 1) + 0; //izsaucam metodi
                 System.out.println(randomNumber);
             }
             inputInt = randomNumber;

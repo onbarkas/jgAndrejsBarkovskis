@@ -5,7 +5,7 @@ public class Calculator {
         int result = firstNumber + secondNumber;
                 return result;
     }
-    int subtrac(int firstNumber, int secondNumber){
+    int subtrac(int firstNumber, int secondNumber){ //gramatikas kļūda
         int result = firstNumber - secondNumber;
         return result;
     }
@@ -13,7 +13,7 @@ public class Calculator {
         int result = firstNumber * secondNumber;
         return result;
     }
-    double devide(int firstNumber, int secondNumber){
+    double devide(int firstNumber, int secondNumber){ //gramatikas kļūda
         double result = firstNumber / (double) secondNumber;
         return result;
     }

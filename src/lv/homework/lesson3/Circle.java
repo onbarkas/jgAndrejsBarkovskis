@@ -1,5 +1,6 @@
 package lv.homework.lesson3;
 
+//Ok
 public class Circle {
     double radius;
 

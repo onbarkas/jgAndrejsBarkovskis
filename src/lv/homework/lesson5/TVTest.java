@@ -1,5 +1,6 @@
 package lv.homework.lesson5;
 
+//Ok
 public class TVTest {
     public static void main(String[] args) {
         TV onePlus = new TV();

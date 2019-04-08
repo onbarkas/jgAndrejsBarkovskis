@@ -1,5 +1,6 @@
 package lv.homework.lesson5;
 
+//OK
 public class BookTest {
     public static void main(String[] args) {
         Book cleanCode = new Book();

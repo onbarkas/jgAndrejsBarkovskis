@@ -1,8 +1,11 @@
 package lv.homework.lesson4;
 
 public class LightColorDetector {
-    public String detect(int wavelenght){
-        if ((wavelenght >= 380) && (wavelenght < 450)){
+    public String detect(int wavelenght){ //camelCase!!
+
+        //šeit labak izmantot "if-elseif-else" jo var iestāties tiek viens no noteiktajiem stāvokļiem
+        if ((wavelenght >= 380) && (wavelenght < 450)){ //nav nepieciešams tik daudz iekavu
+//            if (wavelenght >= 380 && wavelenght < 450){ //ir tas pats
             return "Violeta";
         }
         if ((wavelenght >= 450) && (wavelenght < 495)){

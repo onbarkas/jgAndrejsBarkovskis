@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class ArrayService {
     Random randomGenerator = new Random();
-    int n = randomGenerator.nextInt(10);
+    int n = randomGenerator.nextInt(10); //slikts mainīgā nosaukums , pie tam tas nav vajadzīgs
     int[] array1d;
     int sumInArray;
 
@@ -14,7 +14,7 @@ public class ArrayService {
     }
 
     public void fillArrayWithRandomNumbers() {
-        for (int i = 0; i < array1d.length; i++) {
+        for (int i = 0; i < array1d.length; i++) {//for(int val : array1d) {
             array1d[i] = randomGenerator.nextInt(100);
         }
     }
@@ -24,11 +24,16 @@ public class ArrayService {
         for (int i = 0; i < array1d.length; i++) {
             System.out.print(array1d[i] + " ");
         }
+
+        //labak šādi
+//        for(int val : array1d) {
+//            System.out.println(val + " ");
+//        }
     }
 
     public void sumInArray() {
-        for (int i = 0; i < array1d.length; i++) {
-            sumInArray = array1d[i] + sumInArray;
+        for (int i = 0; i < array1d.length; i++) { //for(int val : array1d) {
+            sumInArray = array1d[i] + sumInArray;//sumInArray += array1d[i]
         }
         System.out.println("\nSum in array " + sumInArray);
     }

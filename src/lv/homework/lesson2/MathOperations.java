@@ -1,5 +1,6 @@
 package lv.homework.lesson2;
 
+//Ok
 public class MathOperations {
     public static void main(String[] args) {
         int firstNumber = 10, secondNumber = 15;

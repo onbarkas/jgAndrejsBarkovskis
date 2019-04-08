@@ -1,5 +1,6 @@
 package lv.homework.lesson3;
 
+//Ok
 public class ProductTest {
     public static void main(String[] args) {
         Product NewProduct = new Product();

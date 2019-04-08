@@ -26,6 +26,7 @@ public class Company {
         if (this == o) return true;
         if (!(o instanceof Company)) return false;
         Company company = (Company) o;
+        //neizmantot geterus šeit
         return getName().equals(company.getName()) &&
                 getRegistrationNumber().equals(company.getRegistrationNumber());
     }
@@ -33,7 +34,7 @@ public class Company {
     @Override
     public int hashCode() {
         return Objects.hash(getName(), getRegistrationNumber());
-    }
+    } //neizmantot geterus šeit
 
     @Override
     public String toString() {

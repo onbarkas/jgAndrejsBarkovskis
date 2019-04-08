@@ -35,6 +35,8 @@ public class Book {
         if (this == o) return true;
         if (!(o instanceof Book)) return false;
         Book book = (Book) o;
+        //geteru vietā izmanto tieši laukus: author == book.getPageCount()
+        //jo metodē varbūt iekļauta papildus loģika
         return getPageCount() == book.getPageCount() &&
                 getAuthor().equals(book.getAuthor()) &&
                 getTitle().equals(book.getTitle());
