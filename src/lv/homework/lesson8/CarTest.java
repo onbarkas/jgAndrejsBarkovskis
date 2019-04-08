@@ -6,9 +6,12 @@ public class CarTest {
         RegularCar regularCar = new RegularCar();
         Truck truck = new Truck();
 
+
+
+
         bus.isDriving();
         regularCar.isDriving();
         truck.isDriving();
-        bus.toString();
+        System.out.println(bus);
     }
 }
