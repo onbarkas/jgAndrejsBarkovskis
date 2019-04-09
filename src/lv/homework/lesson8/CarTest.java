@@ -13,7 +13,7 @@ public class CarTest {
         car.setWheelCount(5);
         System.out.println(car);
 
-
+        bus.setManufactor("Volvo");
 
         bus.isDriving();
         regularCar.isDriving();
