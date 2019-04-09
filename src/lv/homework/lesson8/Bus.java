@@ -1,6 +1,6 @@
 package lv.homework.lesson8;
 
-class Bus extends Car{
+class Bus extends Car {
 
     @Override
     public boolean equals(Object obj) {
@@ -10,6 +10,6 @@ class Bus extends Car{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Bus " + super.toString();
     }
 }
