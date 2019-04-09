@@ -24,5 +24,6 @@ public class CarTest {
         truck.setManufactor("Scanija");
         truck.setColor("white");
         System.out.println(truck);
+        System.out.println(car);
     }
 }

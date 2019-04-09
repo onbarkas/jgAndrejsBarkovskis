@@ -21,6 +21,6 @@ class Truck extends Car {
                 + " Cargo sum is " + cargoSum +
                 " manufactor='" + super.getManufactor() + '\'' +
                 ", color='" + super.getColor() + '\'' +
-                ", wheelCount=" + super.getWheelCount();
+                ", wheelCount=" + (super.getWheelCount()>0? super.getWheelCount():"Need a parametor");
     }
 }
