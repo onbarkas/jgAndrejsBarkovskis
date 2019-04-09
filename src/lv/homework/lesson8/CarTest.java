@@ -19,5 +19,6 @@ public class CarTest {
         regularCar.isDriving();
         truck.isDriving();
         System.out.println(bus);
+        System.out.println(truck);
     }
 }
