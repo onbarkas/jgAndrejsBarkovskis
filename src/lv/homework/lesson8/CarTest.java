@@ -8,7 +8,7 @@ public class CarTest {
 
         Car car = new Car();
 
-        car.setManufactor("IBM");
+        //car.setManufactor("IBM");
         car.setColor("red");
         car.setWheelCount(5);
         System.out.println(car);

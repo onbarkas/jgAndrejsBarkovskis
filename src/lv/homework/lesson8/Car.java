@@ -1,5 +1,7 @@
 package lv.homework.lesson8;
 
+import java.util.Objects;
+
 public class Car {
 
     private String manufactor, color;
@@ -35,10 +37,17 @@ public class Car {
         System.out.println("Car is driving");
     }
 
+
     @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return wheelCount == car.wheelCount &&
+                manufactor.equals(car.manufactor) &&
+                color.equals(car.color);
     }
+    
 
     @Override
     public String toString() {
