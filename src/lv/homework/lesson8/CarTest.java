@@ -20,5 +20,9 @@ public class CarTest {
         truck.isDriving();
         System.out.println(bus);
         System.out.println(truck);
+        truck.setCargoSum(2);
+        truck.setManufactor("Scanija");
+        truck.setColor("white");
+        System.out.println(truck);
     }
 }
