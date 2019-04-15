@@ -4,9 +4,7 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.Scanner;
 
-//UniqueWordVocabulary ir jābūt atsevišķai klasei, no kuras var izveidot objektu
-//kuram ir attiecīgi metodes addWord, getUniqueWords, printToConsole
-//un ir otra klase main metodi, kur objekta darbības tiek demonstrētas
+//trūkst metode getUniqueWords
 public class UniqueWordVocabulary {
     public static void main(String[] args) {
         Set<String> vocabulary = new HashSet<>();
@@ -15,7 +13,7 @@ public class UniqueWordVocabulary {
         addWord(vocabulary);
         addWord(vocabulary);
         printToConsole(vocabulary);
-        vocabulary.iterator();
+        vocabulary.iterator(); //šim nav jēga, un to labak neizmantot
     }
 
     public static void printToConsole(Set<String> vocabulary) {
@@ -23,7 +21,8 @@ public class UniqueWordVocabulary {
     }
 
     public static void addWord(Set<String> vocabulary) {
-        Scanner wordScanner = new Scanner(System.in);
+        Scanner wordScanner = new Scanner(System.in); //skaneri deinējam klases līmenī, vai nodod kā parametru,
+        // lai nav jāveido objekts katru reizi izsaucot metodi
         String words = wordScanner.nextLine();
         if (words.equals("")) {
             System.out.println("nevar but tukshs");
