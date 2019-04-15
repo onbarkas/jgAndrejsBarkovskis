@@ -4,6 +4,9 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.Scanner;
 
+//UniqueWordVocabulary ir jābūt atsevišķai klasei, no kuras var izveidot objektu
+//kuram ir attiecīgi metodes addWord, getUniqueWords, printToConsole
+//un ir otra klase main metodi, kur objekta darbības tiek demonstrētas
 public class UniqueWordVocabulary {
     public static void main(String[] args) {
         Set<String> vocabulary = new HashSet<>();

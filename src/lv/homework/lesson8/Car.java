@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Car {
 
-    private String manufactor, color;
+    private String manufactor, color; //Typo: manufacture
     private int wheelCount;
 
     public String getManufactor() {
@@ -29,14 +29,14 @@ public class Car {
 
     public int getWheelCount() {
         return wheelCount;
-
-
+//liekas rindas
+//liekas rindas
     }
 
     public void isDriving(){
         System.out.println("Car is driving");
     }
-
+//lieka rindas
 
     @Override
     public boolean equals(Object o) {
@@ -47,7 +47,7 @@ public class Car {
                 manufactor.equals(car.manufactor) &&
                 color.equals(car.color);
     }
-    
+//lieka rindas
 
     @Override
     public String toString() {

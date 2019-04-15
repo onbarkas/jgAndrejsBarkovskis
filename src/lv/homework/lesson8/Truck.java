@@ -3,6 +3,7 @@ package lv.homework.lesson8;
 class Truck extends Car {
     private int cargoSum;
 
+    //lieka metode - nav izmantota
     public int getCargoSum() {
         return cargoSum;
     }
@@ -13,7 +14,7 @@ class Truck extends Car {
 
     public boolean ishaveCargo() {
         return cargoSum > 0;
-    }
+    } //CamelCase
 
     @Override
     public boolean equals(Object o) {
@@ -23,7 +24,7 @@ class Truck extends Car {
         Truck truck = (Truck) o;
         return cargoSum == truck.cargoSum;
     }
-
+//lieka rinda
 
     @Override
     public String toString() {
@@ -31,6 +32,6 @@ class Truck extends Car {
                 + " Cargo sum is " + cargoSum +
                 " manufacture='" + super.getManufactor() + '\'' +
                 ", color='" + super.getColor() + '\'' +
-                ", wheelCount=" + (super.getWheelCount() > 0 ? super.getWheelCount() : " Need a parametor");
+                ", wheelCount=" + (super.getWheelCount() > 0 ? super.getWheelCount() : " Need a parametor"); ///Typo
     }
 }
