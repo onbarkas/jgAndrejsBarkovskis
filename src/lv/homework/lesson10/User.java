@@ -32,7 +32,7 @@ public class User {
         if (age <= 0 || age >= 120) {
             return false;
         }
-        if (name.length() < 3 || name.length() > 15 || name.equals("")) {
+        if (name.length() < 3 || name.length() > 15 ||  name.isEmpty()) {
             return false;
         }
         if (userName.length() < 3 || userName.length() > 15 || userName.equals("")) {
