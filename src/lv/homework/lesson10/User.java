@@ -18,8 +18,7 @@ public class User {
         this.userName = userName;
         this.age = age;
     }
-
-    public String getName() {
+/*    public String getName() {
         return name;
     }
 
@@ -41,7 +40,7 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
-    }
+    }*/
 
     public boolean userValidationService() {
         if (age <= 0 || age >= 120) {
