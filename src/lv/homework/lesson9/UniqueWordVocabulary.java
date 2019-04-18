@@ -14,8 +14,8 @@ public class UniqueWordVocabulary {
         addWord(vocabulary);
         addWord(vocabulary);
         addWord(vocabulary);
-        printToConsole(vocabulary);
         vocabulary.iterator();
+        printToConsole(vocabulary);
     }
 
     public static void printToConsole(Set<String> vocabulary) {
