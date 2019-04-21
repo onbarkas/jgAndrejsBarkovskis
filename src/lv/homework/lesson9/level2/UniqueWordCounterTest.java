@@ -9,6 +9,8 @@ public class UniqueWordCounterTest {
         uniqueWordCounter.addWord("treshais");
         uniqueWordCounter.addWord("ceturtais");
         uniqueWordCounter.addWord("Pirmais");
+        uniqueWordCounter.addWord("otrais");
         uniqueWordCounter.printToConsole();
+        uniqueWordCounter.mostUsedWords();
     }
 }

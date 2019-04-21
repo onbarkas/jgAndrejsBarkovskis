@@ -5,7 +5,7 @@ import java.util.Map;
 
 class UniqueWordCounter {
     private Map<String, Integer> vocabulary = new HashMap<>();
-    private Integer keyNumber = 1;
+    private Integer timesUsed = 1;
     private Integer counter = 1;
 
     void addWord(String word) {
@@ -13,8 +13,12 @@ class UniqueWordCounter {
         } else if (vocabulary.containsKey(word)) {
             vocabulary.replace(word, counter = counter + 1);
         } else {
-            vocabulary.put(word, keyNumber);
+            vocabulary.put(word, timesUsed);
         }
+    }
+
+    void mostUsedWords(){
+        System.out.println(vocabulary.values());
     }
 
     void printToConsole() {
