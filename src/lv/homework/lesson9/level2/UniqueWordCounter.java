@@ -9,17 +9,22 @@ class UniqueWordCounter {
     private Integer counter = 1;
 
     void addWord(String word) {
-        if (word.isEmpty()) {
+/*        if (word.isEmpty()) {
         } else if (vocabulary.containsKey(word)) {
-            vocabulary.replace(word, counter = counter + 1);
+            vocabulary.replace(word, timesUsed);
         } else {
             vocabulary.put(word, timesUsed);
-        }
+        } timesUsed = 1;*/
     }
 
-    void mostUsedWords(){
-        System.out.println(vocabulary.values());
-    }
+/*    void mostUsedWords(){
+        for (Map.Entry<String, Integer> entry : vocabulary.entrySet()) {
+
+            if (entry.getValue().compareTo(vocabulary.containsValue()) > 0) {
+                System.out.println();
+            }
+        }
+    }*/
 
     void printToConsole() {
         System.out.println(vocabulary);
