@@ -19,7 +19,9 @@ class UniqueWordVocabularyList {
     }
 
     void printToConsole() {
-        System.out.println(vocabulary);
+        for (String listOfWords: vocabulary){
+            System.out.println(listOfWords);
+        }
     }
 
 

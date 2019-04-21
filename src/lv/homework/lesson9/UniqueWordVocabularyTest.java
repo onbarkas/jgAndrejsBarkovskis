@@ -6,6 +6,7 @@ public class UniqueWordVocabularyTest {
         uniqueWordVocabularyList.addWord("pirmais");
         uniqueWordVocabularyList.addWord("");
         uniqueWordVocabularyList.addWord("tresais");
+        uniqueWordVocabularyList.addWord("ceturtais");
         uniqueWordVocabularyList.printToConsole();
         uniqueWordVocabularyList.getUniqueWords();
 
