@@ -1,4 +1,5 @@
-package lv.homework.lesson9;
+/*
+package lv.homework.lesson9.level1;
 
 import java.util.Set;
 import java.util.HashSet;
@@ -18,11 +19,11 @@ public class UniqueWordVocabulary {
         printToConsole(vocabulary);
     }
 
-    public static void printToConsole(Set<String> vocabulary) {
+    private static void printToConsole(Set<String> vocabulary) {
         System.out.println(vocabulary);
     }
 
-    public static void addWord(Set<String> vocabulary) {
+    private static void addWord(Set<String> vocabulary) {
         Scanner wordScanner = new Scanner(System.in);
         String words = wordScanner.nextLine();
         if (words.equals("")) {
@@ -34,3 +35,4 @@ public class UniqueWordVocabulary {
 
     }
 }
+*/

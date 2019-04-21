@@ -1,4 +1,4 @@
-package lv.homework.lesson9;
+package lv.homework.lesson9.level1;
 
 public class UniqueWordVocabularyTest {
     public static void main(String[] args) {

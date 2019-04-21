@@ -1,4 +1,4 @@
-package lv.homework.lesson9;
+package lv.homework.lesson9.level1;
 
 import java.util.ArrayList;
 import java.util.List;
