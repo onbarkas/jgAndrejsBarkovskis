@@ -12,6 +12,8 @@ public class UniqueWordCounterTest {
         uniqueWordCounter.addWord("otrais");
         uniqueWordCounter.addWord("Pirmais");
         uniqueWordCounter.addWord("Pirmais");
+        uniqueWordCounter.addWord("otrais");
+        uniqueWordCounter.mostUsedWords();
         uniqueWordCounter.printToConsole();
 
     }

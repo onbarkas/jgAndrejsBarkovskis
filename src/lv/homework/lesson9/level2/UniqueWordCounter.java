@@ -7,6 +7,7 @@ class UniqueWordCounter {
     private Map<String, Integer> vocabulary = new HashMap<>();
     private Integer timesUsed = 1;
     private Integer counter = 1;
+    private Integer max = 0;
 
     void addWord(String word) {
         if (word.isEmpty()) {
@@ -18,14 +19,26 @@ class UniqueWordCounter {
         }
     }
 
-/*    void mostUsedWords(){
-        for (Map.Entry<String, Integer> entry : vocabulary.entrySet()) {
+    void mostUsedWords() {
+        getCounter();
+        getMostUsedWord();
+    }
 
-            if (entry.getValue().compareTo(vocabulary.containsValue()) > 0) {
-                System.out.println();
+    private void getCounter() {
+        for (String itemList : vocabulary.keySet()) {
+            if (vocabulary.get(itemList) > max) {
+                max = vocabulary.get(itemList);
             }
         }
-    }*/
+    }
+
+    private void getMostUsedWord() {
+        for (String itemList2 : vocabulary.keySet()) {
+            if (vocabulary.get(itemList2) == max) {
+                System.out.println("Most common used word - " + itemList2);
+            }
+        }
+    }
 
     void printToConsole() {
         System.out.println(vocabulary);
