@@ -5,7 +5,6 @@ import java.util.Map;
 
 class UniqueWordCounter {
     private Map<String, Integer> vocabulary = new HashMap<>();
-    private Integer timesUsed = 1;
     private Integer counter = 1;
     private Integer max = 0;
 
@@ -13,28 +12,16 @@ class UniqueWordCounter {
         if (word.isEmpty()) {
         } else if (vocabulary.containsKey(word)) {
             counter = vocabulary.get(word);
-            vocabulary.replace(word, counter + 1);
+            vocabulary.replace(word, ++counter);
+            if (counter > max) {max = counter;}
         } else {
-            vocabulary.put(word, timesUsed);
+            vocabulary.put(word, 1);
         }
     }
 
-    void mostUsedWords() {
-        getCounter();
-        getMostUsedWord();
-    }
-
-    private void getCounter() {
-        for (String itemList : vocabulary.keySet()) {
-            if (vocabulary.get(itemList) > max) {
-                max = vocabulary.get(itemList);
-            }
-        }
-    }
-
-    private void getMostUsedWord() {
-        for (String itemList2 : vocabulary.keySet()) {
-            if (vocabulary.get(itemList2) == max) {
+    void getMostUsedWord() {
+        for (Integer itemList2 : vocabulary.values()) {
+            if (itemList2.equals(max)) {
                 System.out.println("Most common used word - " + itemList2);
             }
         }
@@ -44,5 +31,33 @@ class UniqueWordCounter {
         System.out.println(vocabulary);
     }
 }
+
+
+
+
+/*    private void getCounter() {
+        for (String itemList : vocabulary.keySet()) {
+            if (vocabulary.get(itemList) > max) {
+                max = vocabulary.get(itemList);
+            }
+        }
+    }*/
+
+/*    private void getMostUsedWord() {
+        for (String itemList2 : vocabulary.keySet()) {
+            if (vocabulary.get(itemList2) == max) {
+                System.out.println("Most common used word - " + itemList2);
+            }
+        }
+    }*/
+
+/*    private void getCounter(){
+        for (Integer ItemList : vocabulary.values()){
+            if (ItemList > max) {
+                max = ItemList;
+            }
+        }
+    }*/
+
 
 

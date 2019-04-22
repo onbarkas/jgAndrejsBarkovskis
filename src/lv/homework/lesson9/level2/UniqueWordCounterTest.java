@@ -13,7 +13,7 @@ public class UniqueWordCounterTest {
         uniqueWordCounter.addWord("Pirmais");
         uniqueWordCounter.addWord("Pirmais");
         uniqueWordCounter.addWord("otrais");
-        uniqueWordCounter.mostUsedWords();
+        uniqueWordCounter.getMostUsedWord();
         uniqueWordCounter.printToConsole();
 
     }
