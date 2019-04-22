@@ -9,12 +9,13 @@ class UniqueWordCounter {
     private Integer counter = 1;
 
     void addWord(String word) {
-/*        if (word.isEmpty()) {
+        if (word.isEmpty()) {
         } else if (vocabulary.containsKey(word)) {
-            vocabulary.replace(word, timesUsed);
+            counter = vocabulary.get(word);
+            vocabulary.replace(word, counter + 1);
         } else {
             vocabulary.put(word, timesUsed);
-        } timesUsed = 1;*/
+        }
     }
 
 /*    void mostUsedWords(){
