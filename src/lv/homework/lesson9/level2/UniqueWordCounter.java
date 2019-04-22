@@ -33,7 +33,7 @@ class UniqueWordCounter {
 }
 
 
-
+// 4hours
 
 /*    private void getCounter() {
         for (String itemList : vocabulary.keySet()) {
