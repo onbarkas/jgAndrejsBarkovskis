@@ -21,7 +21,7 @@ public class User {
         this.age = age;
     }
 
-    public boolean userValidationService() {
+    boolean userValidationService() {
         if (age <= 0 || age >= 120) {
             return false;
         }
