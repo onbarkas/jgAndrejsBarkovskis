@@ -6,7 +6,7 @@ public class User {
     private String name, lastName;
     private int age;
 
-    public User(String name, String lastName, int age) throws ValidationException {
+    User(String name, String lastName, int age) throws ValidationException {
         if (age <= 0 || age >= 120) {
             throw new ValidationException("age only can be from 0 to 120");
         }
