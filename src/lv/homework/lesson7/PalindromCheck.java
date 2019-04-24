@@ -3,11 +3,12 @@ package lv.homework.lesson7;
 
 import java.util.Scanner;
 
-public class PalindromCheck {
+class PalindromCheck {
+    private int inputInt;
 
     //metodei ir janodod pārbaudāmā rinda String[]
-    public boolean isPalindrome() {
-        int inputInt;
+    boolean isPalindrome() {
+
         Scanner scanner = new Scanner(System.in);
         String[] array = new String[5];
         String[] arrayReversed = new String[5];
@@ -45,7 +46,7 @@ public class PalindromCheck {
         do {
             System.out.println("Ievadiet rindas numuru no 1 lidz " + (array.length) + ", kuru gribat parbaudit");
             inputInt = scanner.nextInt() - 1;
-        } while ((inputInt < 0) || (inputInt > 5));
+        } while ((inputInt < 0) || (inputInt >= 5));
         return inputInt;
     }
 }
