@@ -1,3 +1,4 @@
+/*
 package lv.homework.lesson9.level3;
 
 public class LibraryTest {
@@ -6,3 +7,4 @@ public class LibraryTest {
         bookLibrary.addBook();
     }
 }
+*/
