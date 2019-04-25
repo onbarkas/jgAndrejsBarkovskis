@@ -17,7 +17,7 @@ public class Product {
         return "Product{" +
                 "productName='" + productName + '\'' +
                 ", category='" + category + '\'' +
-                ", price=" + price +
+                ", price=" + price.setScale(2, 5) +
                 '}';
     }
 }
