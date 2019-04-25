@@ -4,8 +4,9 @@ import javax.xml.bind.ValidationException;
 
 public class User {
     private String name, lastName;
-    private int age;
+    private int age;  // datu tipam jabūt Objekta Integer - uzdevuma nosacījumi
 
+    //validācijas daļu jaines atsevišķā metodē - validation
     User(String name, String lastName, int age) throws ValidationException {
         if (age <= 0 || age >= 120) {
             throw new ValidationException("age only can be from 0 to 120");
@@ -21,6 +22,7 @@ public class User {
         this.age = age;
     }
 
+    //metode dublē loģiku - nav nepieciešama
     boolean userValidationService() {
         if (age <= 0 || age >= 120) {
             return false;
