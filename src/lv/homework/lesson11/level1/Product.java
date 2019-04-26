@@ -3,10 +3,11 @@ package lv.homework.lesson11.level1;
 import java.math.BigDecimal;
 
 public class Product {
-    private String productName, category;
+    private String productName;
+    private ProductCategory category;
     private BigDecimal price;
 
-    Product(String productName, String category, BigDecimal price) {
+    Product(String productName, ProductCategory category, BigDecimal price) {
         this.productName = productName;
         this.category = category;
         this.price = price;
@@ -16,24 +17,12 @@ public class Product {
         return productName;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public String getCategory() {
+    public ProductCategory getCategory() {
         return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
     }
 
     public BigDecimal getPrice() {
         return price;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
     }
 
     @Override

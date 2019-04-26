@@ -7,7 +7,7 @@ class ShoppingList {
 
     private List<Product> productList = new ArrayList<>();
 
-    void addProduct(String productName, String category, BigDecimal price) {
+    void addProduct(String productName, ProductCategory category, BigDecimal price) {
         productList.add(new Product(productName, category, price));
     }
 
@@ -23,6 +23,14 @@ class ShoppingList {
         for (int i = 0; i < productList.size(); i++) {
             if ((productList.get(i).getPrice().compareTo(priceBegin)) >= 0
                     && (productList.get(i).getPrice().compareTo(priceEnd)) <= 0) {
+                System.out.println(productList.get(i));
+            }
+        }
+    }
+
+    void categoryList (ProductCategory category){
+        for (int i = 0; i < productList.size(); i++) {
+            if (productList.get(i).getCategory().equals(category)) {
                 System.out.println(productList.get(i));
             }
         }

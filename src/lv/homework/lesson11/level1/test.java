@@ -6,14 +6,16 @@ public class test {
     public static void main(String[] args) {
         ShoppingList shoppinglist = new ShoppingList();
         System.out.println("Add product");
-        shoppinglist.addProduct("Apple", "Mobile", BigDecimal.valueOf(899.99));
-        shoppinglist.addProduct("Samsung", "Mobile", BigDecimal.valueOf(999.99));
-        shoppinglist.addProduct("Huawei", "Mobile", BigDecimal.valueOf(399.99));
+        shoppinglist.addProduct("Apple", "PC", BigDecimal.valueOf(899.99));
+        shoppinglist.addProduct("Samsung", "PC", BigDecimal.valueOf(999.99));
+        shoppinglist.addProduct("Huawei", "PC", BigDecimal.valueOf(399.99));
         shoppinglist.print();
         System.out.println("delete product");
         shoppinglist.deleteProduct("Huawei");
         shoppinglist.print();
         System.out.println("Products in price range");
-        shoppinglist.priceRange(BigDecimal.valueOf(800),BigDecimal.valueOf(900));
+        shoppinglist.priceRange(BigDecimal.valueOf(800),BigDecimal.valueOf(999.98));
+        System.out.println("Products in category range");
+        shoppinglist.categoryList("PC");
     }
 }
