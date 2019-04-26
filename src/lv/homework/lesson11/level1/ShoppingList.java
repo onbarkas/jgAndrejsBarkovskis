@@ -28,7 +28,6 @@ class ShoppingList {
         }
     }
 
-
     void print() {
         for (Product listOfWords : productList) {
             System.out.println(listOfWords);
