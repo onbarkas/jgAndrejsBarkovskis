@@ -10,14 +10,14 @@ public class NumberService {
                 sum = i + sum;
                 System.out.format("%5d", i);//nav  nepieciešams
             }
-            System.out.println("     Sum is " + sum);//jāatrodas test metodē
+            System.out.println("     Sum is " + sum);//jāatrodas ShoppingListTest metodē
             sum = 0; // šis nav nepieciešams, ienesot mainīgo metodē
         } else {
             for (int i = a; i >= b; i--) {
                 sum = i + sum;
                 System.out.format("%5d", i);
             }
-            System.out.println("     Sum is " + sum);//jāatrodas test metodē
+            System.out.println("     Sum is " + sum);//jāatrodas ShoppingListTest metodē
             sum = 0;// šis nav nepieciešams, ienesot mainīgo metodē
         }
     }

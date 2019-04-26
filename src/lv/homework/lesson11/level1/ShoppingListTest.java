@@ -2,7 +2,7 @@ package lv.homework.lesson11.level1;
 
 import java.math.BigDecimal;
 
-public class test {
+public class ShoppingListTest {
     public static void main(String[] args) {
         ShoppingList shoppinglist = new ShoppingList();
         System.out.println("Add product");
