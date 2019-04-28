@@ -1,20 +1,16 @@
-package lv.homework.lesson4;
+package lv.homework.lesson4.level2;
 
-public class Stock {
+class Stock {
     private String company;
     private double currentValue;
     private double min;
     private double max;
 
-    public Stock(String company, double currentValue) {
+    Stock(String company, double currentValue) {
         setCompany(company);
         setCurrentValue(currentValue);
         setMin(currentValue);
         setMax(currentValue);
-    }
-
-    private String getCompany() {
-        return company;
     }
 
     private void setCompany(String company) {
@@ -27,15 +23,6 @@ public class Stock {
 
     private void setCurrentValue(double currentValue) {
         this.currentValue = currentValue;
-
-    }
-
-    private double getMax() {
-        return max;
-    }
-
-    private void setMax(double max) {
-        this.max = max;
     }
 
     private double getMin() {
@@ -46,7 +33,15 @@ public class Stock {
         this.min = min;
     }
 
-    public void updatePrice(double updateCurrentValue) {
+    private double getMax() {
+        return max;
+    }
+
+    private void setMax(double max) {
+        this.max = max;
+    }
+
+    void updatePrice(double updateCurrentValue) {
         setCurrentValue(updateCurrentValue);
         if (updateCurrentValue > getMax()) {
             setMax(updateCurrentValue);
@@ -56,9 +51,8 @@ public class Stock {
         }
     }
 
-    public void printInformation() {
-        System.out.println("Current value = " + getCurrentValue());
-        System.out.println("Max = " + getMax());
-        System.out.println("Min = " + getMin());
+    void printInformation() {
+        System.out.println("Company's name = " + company + "\nCurrent value = " + getCurrentValue()
+                + "\nMax = " + getMax() + "\nMin = " + getMin() + "\n");
     }
 }
