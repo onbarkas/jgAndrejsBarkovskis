@@ -1,4 +1,4 @@
-package lv.homework.lesson3;
+package lv.homework.lesson3.level2;
 
 //Ok
 //lietojam "ctrl + alt + l"
@@ -9,6 +9,6 @@ public class CarTest {
         NewCar.setManufacturer("Mazda");
         NewCar.setYear(2020);
 
-        System.out.println(NewCar.getManufacturer() + NewCar.getColor() + NewCar.getYear());
+        System.out.println(NewCar.getManufacturer() + "\n" + NewCar.getColor() + "\n" + NewCar.getYear());
     }
 }
