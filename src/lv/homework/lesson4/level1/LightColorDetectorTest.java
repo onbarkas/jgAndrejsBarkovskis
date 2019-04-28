@@ -1,4 +1,59 @@
-package lv.homework.lesson4;
+package lv.homework.lesson4.level1;
+
+public class LightColorDetectorTest {
+    public static void main(String[] args) {
+        LightColorDetectorTest colorDetectTest = new LightColorDetectorTest();
+        colorDetectTest.shouldDetectColorViolet();
+        colorDetectTest.shouldDetectColorBlue();
+        colorDetectTest.shouldDetectColorGreen();
+        colorDetectTest.shouldDetectColorYellow();
+        colorDetectTest.shouldDetectColorOrange();
+        colorDetectTest.shouldDetectColorRed();
+    }
+
+    private void shouldDetectColorViolet() {
+        LightColorDetector ColorDetect = new LightColorDetector();
+        String result = ColorDetect.detect(380);
+        compareDetectedColor(result.equals("Violet"), "ShouldDetectColorViolet");
+    }
+
+    private void shouldDetectColorBlue() {
+        LightColorDetector ColorDetect = new LightColorDetector();
+        String result = ColorDetect.detect(450);
+        compareDetectedColor(result.equals("Blue"), "ShouldDetectColorBlue");
+    }
+
+    private void shouldDetectColorGreen() {
+        LightColorDetector ColorDetect = new LightColorDetector();
+        String result = ColorDetect.detect(495);
+        compareDetectedColor(result.equals("Green"), "ShouldDetectColorGreen");
+    }
+
+    private void shouldDetectColorYellow() {
+        LightColorDetector ColorDetect = new LightColorDetector();
+        String result = ColorDetect.detect(570);
+        compareDetectedColor(result.equals("Yellow"), "ShouldDetectColorYellow");
+    }
+
+    private void shouldDetectColorOrange() {
+        LightColorDetector ColorDetect = new LightColorDetector();
+        String result = ColorDetect.detect(590);
+        compareDetectedColor(result.equals("Orange"), "ShouldDetectColorOrange");
+    }
+
+    private void shouldDetectColorRed() {
+        LightColorDetector ColorDetect = new LightColorDetector();
+        String result = ColorDetect.detect(620);
+        compareDetectedColor(result.equals("Red"), "ShouldDetectColorRed");
+    }
+
+    private void compareDetectedColor(boolean result, String testName) {
+        System.out.println(testName + (result ? " OK" : " Fail"));
+    }
+}
+
+
+/*package lv.homework.lesson4.level1;
 
 public class LightColorDetectorTest {
     public static void main(String[] args) {
@@ -52,4 +107,5 @@ public class LightColorDetectorTest {
         else
             System.out.println(testName + " Fail");
     }
-}
+}*/
+

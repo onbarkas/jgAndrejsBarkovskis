@@ -1,5 +1,26 @@
-package lv.homework.lesson4;
+package lv.homework.lesson4.level1;
 
+class LightColorDetector {
+    String detect(int waveLength) {
+        if (waveLength >= 380 && waveLength < 450) {
+            return "Violet";
+        } else if (waveLength >= 450 && waveLength < 495) {
+            return "Blue";
+        } else if (waveLength >= 495 && waveLength < 570) {
+            return "Green";
+        } else if (waveLength >= 570 && waveLength < 590) {
+            return "Yellow";
+        } else if (waveLength >= 590 && waveLength < 620) {
+            return "Orange";
+        } else if (waveLength >= 620 && waveLength < 750) {
+            return "Red";
+        }
+        return "Can not see color";
+    }
+}
+
+
+/*
 public class LightColorDetector {
     public String detect(int wavelenght){ //camelCase!!
 
@@ -25,4 +46,4 @@ public class LightColorDetector {
         }
         return "Gaisma nav redzama";
     }
-}
+}*/
