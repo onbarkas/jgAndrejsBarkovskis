@@ -7,12 +7,9 @@ public class MathOperations {
 
         int sumResult = firstNumber + secondNumber;
         int subtract = firstNumber - secondNumber;
-        int divide = firstNumber / secondNumber;
+        double divide = (double)firstNumber / (double)secondNumber;
         int multiply = firstNumber * secondNumber;
 
-        System.out.println(sumResult);
-        System.out.println(subtract);
-        System.out.println(divide);
-        System.out.println(multiply);
+        System.out.println("Sum = " + sumResult + "\nSubtract = " + subtract + "\nDivide = " + divide + "\nMultiply = " + multiply);
     }
 }
