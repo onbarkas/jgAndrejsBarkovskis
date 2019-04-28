@@ -9,6 +9,7 @@ public class LightColorDetectorTest {
         colorDetectTest.shouldDetectColorYellow();
         colorDetectTest.shouldDetectColorOrange();
         colorDetectTest.shouldDetectColorRed();
+        colorDetectTest.shouldDontDetectColor();
     }
 
     private void shouldDetectColorViolet() {
@@ -45,6 +46,12 @@ public class LightColorDetectorTest {
         LightColorDetector ColorDetect = new LightColorDetector();
         String result = ColorDetect.detect(620);
         compareDetectedColor(result.equals("Red"), "ShouldDetectColorRed");
+    }
+
+    private void shouldDontDetectColor() {
+        LightColorDetector ColorDetect = new LightColorDetector();
+        String result = ColorDetect.detect(6200);
+        compareDetectedColor(result.equals("Can not see color"), "shouldDontDetectColor");
     }
 
     private void compareDetectedColor(boolean result, String testName) {
