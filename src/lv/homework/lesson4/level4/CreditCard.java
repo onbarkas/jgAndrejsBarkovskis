@@ -19,7 +19,7 @@ public class CreditCard {
         }*/
 
         public boolean topup(double amount, String pinCode){
-            (!this.pinCode.equals(pinCode) && (amount > 0))
+            return this.pinCode.equals(pinCode) && (amount > 0);
         }
 
 /*    boolean isEnoughMoney() {
