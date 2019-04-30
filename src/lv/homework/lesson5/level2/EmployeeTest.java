@@ -1,4 +1,4 @@
-package lv.homework.lesson5.level3;
+package lv.homework.lesson5.level2;
 
 public class EmployeeTest {
     public static void main(String[] args) {
