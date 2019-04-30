@@ -1,4 +1,7 @@
-package lv.homework.lesson5;
+package lv.homework.lesson5.level3;
+
+import lv.homework.lesson5.Company;
+import lv.homework.lesson5.Department;
 
 public class EmployeeTest {
     public static void main(String[] args) {
