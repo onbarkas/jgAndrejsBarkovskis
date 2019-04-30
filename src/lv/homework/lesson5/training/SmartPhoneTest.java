@@ -1,4 +1,4 @@
-package lv.homework.lesson5;
+package lv.homework.lesson5.training;
 
 public class SmartPhoneTest {
     public static void main(String[] args) {

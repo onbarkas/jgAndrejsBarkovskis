@@ -1,4 +1,4 @@
-package lv.homework.lesson5;
+package lv.homework.lesson5.training;
 
 public class ContactInformation {
     private String country, city, address, phoneNumber, email;
