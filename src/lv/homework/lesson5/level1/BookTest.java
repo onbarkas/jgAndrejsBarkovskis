@@ -1,10 +1,10 @@
-package lv.homework.lesson5;
+package lv.homework.lesson5.level1;
 
 //OK
 public class BookTest {
     public static void main(String[] args) {
         Book cleanCode = new Book();
-        cleanCode.setAuthor("Jhon");
+        cleanCode.setAuthor("Me");
         cleanCode.setTitle("Clean Code");
         cleanCode.setPageCount(548);
 
