@@ -1,4 +1,4 @@
-package lv.homework.lesson4;
+package lv.homework.lesson4.training;
 
 public class SignComparatorTest {
     public static void main(String[] args) {
