@@ -7,32 +7,16 @@ public class TV {
     private String manufacturer;
     private boolean turnedOn;
 
-    private int getCurrentChanel() {
-        return currentChanel;
-    }
-
     void setCurrentChanel(int currentChanel) {
         this.currentChanel = currentChanel;
-    }
-
-    private int getCurrentVolumeLevel() {
-        return currentVolumeLevel;
     }
 
     void setCurrentVolumeLevel(int currentVolumeLevel) {
         this.currentVolumeLevel = currentVolumeLevel;
     }
 
-    private String getManufacturer() {
-        return manufacturer;
-    }
-
     void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
-    }
-
-    private boolean isTurnedOn() {
-        return turnedOn;
     }
 
     void setTurnedOn(boolean turnedOn) {
@@ -41,49 +25,54 @@ public class TV {
 
     public void nextChanel() {
         if (turnedOn)
-            currentChanel++;
+        {currentChanel++;
+        System.out.println("ieslegts nakosais kanals");}
     }
 
     public void previousChanel() {
-        if (turnedOn)
+        if (turnedOn) {
             currentChanel--;
+            System.out.println("ieslegts ieprieksejais kanals");}
     }
 
     public void increaseVolume() {
-        if (turnedOn)
+        if (turnedOn) {
             currentVolumeLevel++;
+            System.out.println("skanja ir palielinata");}
     }
 
     void decreaseVolume() {
-        if (turnedOn)
+        if (turnedOn){
             currentVolumeLevel--;
+        System.out.println("skanja ir samazinata");}
     }
 
     void turnOn() {
         turnedOn = true;
+        System.out.println("TV ieslegts");
     }
 
     void turnOf() {
         turnedOn = false;
+        System.out.println("TV izslegts");
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof TV)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         TV tv = (TV) o;
-        //neizmanto geterus
-        return getCurrentChanel() == tv.getCurrentChanel() &&
-                getCurrentVolumeLevel() == tv.getCurrentVolumeLevel() &&
-                isTurnedOn() == tv.isTurnedOn() &&
-                getManufacturer().equals(tv.getManufacturer());
+        return currentChanel == tv.currentChanel &&
+                currentVolumeLevel == tv.currentVolumeLevel &&
+                turnedOn == tv.turnedOn &&
+                manufacturer.equals(tv.manufacturer);
     }
 
     @Override
     public int hashCode() {
-        //neizmanto geterus
-        return Objects.hash(getCurrentChanel(), getCurrentVolumeLevel(), getManufacturer(), isTurnedOn());
+        return Objects.hash(currentChanel, currentVolumeLevel, manufacturer, turnedOn);
     }
+
 
     @Override
     public String toString() {

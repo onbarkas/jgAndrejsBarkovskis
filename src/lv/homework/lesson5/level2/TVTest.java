@@ -12,6 +12,7 @@ public class TVTest {
         onePlus.turnOf();
         onePlus.decreaseVolume();
         System.out.println(onePlus);
+        onePlus.nextChanel();
 
         TV LG = new TV();
         LG.turnOn();
