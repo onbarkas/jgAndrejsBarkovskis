@@ -2,7 +2,7 @@ package lv.homework.lesson5.level3;
 
 import java.util.Objects;
 
-public class Company {
+class Company {
     private String name, registrationNumber;
 
     public String getName() {
@@ -13,28 +13,23 @@ public class Company {
         this.name = name;
     }
 
-    public String getRegistrationNumber() {
-        return registrationNumber;
-    }
-
-    public void setRegistrationNumber(String registrationNumber) {
+    void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Company)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Company company = (Company) o;
-        //neizmantot geterus šeit
-        return getName().equals(company.getName()) &&
-                getRegistrationNumber().equals(company.getRegistrationNumber());
+        return name.equals(company.name) &&
+                registrationNumber.equals(company.registrationNumber);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getRegistrationNumber());
-    } //neizmantot geterus šeit
+        return Objects.hash(name, registrationNumber);
+    }
 
     @Override
     public String toString() {

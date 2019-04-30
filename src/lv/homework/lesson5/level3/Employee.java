@@ -7,45 +7,31 @@ public class Employee {
     private double salary;
     private Department department;
 
-    public String getContactNumber() {
-        return contactNumber;
-    }
-
-    public void setContactNumber(String contactNumber) {
+    void setContactNumber(String contactNumber) {
         this.contactNumber = contactNumber;
     }
 
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
+    void setSalary(double salary) {
         this.salary = salary;
     }
 
-    public Department getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(Department department) {
+    void setDepartment(Department department) {
         this.department = department;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Employee)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        //neizmantot geterus šeit
-        return Double.compare(employee.getSalary(), getSalary()) == 0 &&
-                getContactNumber().equals(employee.getContactNumber()) &&
-                getDepartment().equals(employee.getDepartment());
+        return Double.compare(employee.salary, salary) == 0 &&
+                contactNumber.equals(employee.contactNumber) &&
+                department.equals(employee.department);
     }
 
     @Override
-    //neizmantot geterus šeit
     public int hashCode() {
-        return Objects.hash(getContactNumber(), getSalary(), getDepartment());
+        return Objects.hash(contactNumber, salary, department);
     }
 
     @Override
@@ -53,7 +39,7 @@ public class Employee {
         return "Employee{" +
                 "contactNumber='" + contactNumber + '\'' +
                 ", salary=" + salary +
-                ", department=" + department +
+                "} " + department +
                 '}';
     }
 }
