@@ -1,7 +1,5 @@
 package lv.homework.lesson5.level3;
 
-import lv.homework.lesson5.Department;
-
 import java.util.Objects;
 
 public class Employee {

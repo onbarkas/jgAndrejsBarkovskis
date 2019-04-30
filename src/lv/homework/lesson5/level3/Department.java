@@ -1,4 +1,4 @@
-package lv.homework.lesson5;
+package lv.homework.lesson5.level3;
 
 import java.util.Objects;
 
