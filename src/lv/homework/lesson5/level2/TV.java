@@ -23,28 +23,32 @@ public class TV {
         this.turnedOn = turnedOn;
     }
 
-    public void nextChanel() {
-        if (turnedOn)
-        {currentChanel++;
-        System.out.println("ieslegts nakosais kanals");}
+    void nextChanel() {
+        if (turnedOn) {
+            currentChanel++;
+            System.out.println("ieslegts nakosais kanals");
+        }
     }
 
-    public void previousChanel() {
+    void previousChanel() {
         if (turnedOn) {
             currentChanel--;
-            System.out.println("ieslegts ieprieksejais kanals");}
+            System.out.println("ieslegts ieprieksejais kanals");
+        }
     }
 
-    public void increaseVolume() {
+    void increaseVolume() {
         if (turnedOn) {
             currentVolumeLevel++;
-            System.out.println("skanja ir palielinata");}
+            System.out.println("skanja ir palielinata");
+        }
     }
 
     void decreaseVolume() {
-        if (turnedOn){
+        if (turnedOn) {
             currentVolumeLevel--;
-        System.out.println("skanja ir samazinata");}
+            System.out.println("skanja ir samazinata");
+        }
     }
 
     void turnOn() {
@@ -81,6 +85,6 @@ public class TV {
                 ", currentVolumeLevel=" + currentVolumeLevel +
                 ", manufacturer='" + manufacturer + '\'' +
                 ", turnedOn=" + turnedOn +
-                '}';
+                '}' + "\n";
     }
 }
