@@ -1,4 +1,4 @@
-package lv.homework.lesson5;
+package lv.homework.lesson5.level4;
 
 public class LightBulb {
     private boolean turnedOn = false;
