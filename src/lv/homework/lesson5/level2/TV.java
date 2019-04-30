@@ -2,7 +2,6 @@ package lv.homework.lesson5.level2;
 
 import java.util.Objects;
 
-//ctrl + alt + l
 public class TV {
     private int currentChanel, currentVolumeLevel;
     private String manufacturer;
