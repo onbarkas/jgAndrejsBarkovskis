@@ -1,4 +1,4 @@
-package lv.homework.lesson5;
+package lv.homework.lesson5.level2;
 
 import java.util.Objects;
 
@@ -8,63 +8,63 @@ public class TV {
     private String manufacturer;
     private boolean turnedOn;
 
-    public int getCurrentChanel() {
+    private int getCurrentChanel() {
         return currentChanel;
     }
 
-    public void setCurrentChanel(int currentChanel) {
+    void setCurrentChanel(int currentChanel) {
         this.currentChanel = currentChanel;
     }
 
-    public int getCurrentVolumeLevel() {
+    private int getCurrentVolumeLevel() {
         return currentVolumeLevel;
     }
 
-    public void setCurrentVolumeLevel(int currentVolumeLevel) {
+    void setCurrentVolumeLevel(int currentVolumeLevel) {
         this.currentVolumeLevel = currentVolumeLevel;
     }
 
-    public String getManufacturer() {
+    private String getManufacturer() {
         return manufacturer;
     }
 
-    public void setManufacturer(String manufacturer) {
+    void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
 
-    public boolean isTurnedOn() {
+    private boolean isTurnedOn() {
         return turnedOn;
     }
 
-    public void setTurnedOn(boolean turnedOn) {
+    void setTurnedOn(boolean turnedOn) {
         this.turnedOn = turnedOn;
     }
 
-    public void nextChanel(){
-        if (turnedOn == true)
-        currentChanel++;
+    public void nextChanel() {
+        if (turnedOn)
+            currentChanel++;
     }
 
-    public void previousChanel(){
-        if (turnedOn == true)
-        currentChanel--;
+    public void previousChanel() {
+        if (turnedOn)
+            currentChanel--;
     }
 
-    public void increaseVolume(){
-        if (turnedOn == true)
-        currentVolumeLevel++;
+    public void increaseVolume() {
+        if (turnedOn)
+            currentVolumeLevel++;
     }
 
-    public void decreaseVolume(){
-        if (turnedOn == true)
-        currentVolumeLevel--;
+    void decreaseVolume() {
+        if (turnedOn)
+            currentVolumeLevel--;
     }
 
-    public void turnOn(){
+    void turnOn() {
         turnedOn = true;
     }
 
-    public void turnOf(){
+    void turnOf() {
         turnedOn = false;
     }
 
