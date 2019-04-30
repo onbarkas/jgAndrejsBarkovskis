@@ -1,3 +1,4 @@
+/*
 package lv.homework.lesson11;
 
 import org.junit.Before;
@@ -22,4 +23,4 @@ public class UserServiceTest {
         victim.createUser();
         assertTrue(userRepository.isTriggered());
     }
-}
+}*/
