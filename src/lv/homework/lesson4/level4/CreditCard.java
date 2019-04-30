@@ -1,37 +1,56 @@
 package lv.homework.lesson4.level4;
 
 class CreditCard {
-    private int cardID;
-    private double debetBilance = 100;
+    private int cardID = 12345;
+    private double availableAmount = 0;
     private double creditUsed = 150;
     private double creditLimit = 200;
     private String pinCode = "STR";
-    private double availableAmount;
-    private double amount;
 
     void moneyIn(double amount, String pinCode) {
-        if (this.pinCode.equals(pinCode)) {
-            creditUsed = creditUsed - amount;
-            if (creditUsed < 0) {
-                debetBilance =  debetBilance + (0 - creditUsed);
-            }
-            System.out.println("ss" + amount + "\n" + creditUsed + "\n" + debetBilance);
+        if (pinCodeCheck(pinCode)) {
+            if (amount > 0) {
+                creditUsed = creditUsed - amount;
+                if (creditUsed < 0) {
+                    availableAmount = availableAmount + (0 - creditUsed);
+                    creditUsed = 0;
+                    System.out.println("Nauda ieskaitita " + amount + " euro apmera");
+                }
+            } else System.out.println("summai jabut lielakai par 0");
         } else {
-            System.out.println("neizdevas" + amount + pinCode);
+            System.out.println("Nepareizs pin kods");
         }
     }
 
-/*        public void moneyOut () {
-//verifikacija
-        }*/
+    void moneyOut(double amount, String pinCode) {
+        if (pinCodeCheck(pinCode)) {
+            if (amount > 0) {
+                if (amount < (availableAmount + creditLimit)) {
+                    availableAmount = availableAmount - amount;
+                    if (availableAmount < 0) {
+                        creditUsed = creditUsed + (0 - availableAmount);
+                        availableAmount = 0;
+                        System.out.println("Nauda iznemta " + amount + " euro apmera");
+                    }
+                } else System.out.println("Summa parsniedz bilanci ar kredit limitu");
+            } else System.out.println("summai jabut lielakai par 0");
+        } else System.out.println("Nepareizs pin kods");
 
-/*    public boolean topup(double amount, String pinCode) {
-        return this.pinCode.equals(pinCode)
-                && (amount > this.amount)
-    }*/
+    }
 
-/*    boolean isEnoughMoney() {
-        if ((availableAmount - amount) > 0.001);{}
-    }*/
+    void showBilance(String pinCode) {
+        if (pinCodeCheck(pinCode)) {
+            System.out.println("\n" + "Jusu konta parskats" + "\n"
+                    + "======================" + "\n"
+                    + "debeta bilance = " + availableAmount + "\n"
+                    + "kredīta limits = " + creditLimit + "\n"
+                    + "kredīta aizņemums = " + creditUsed + "\n"
+                    + "======================" + "\n");
+        }
+    }
+
+    private boolean pinCodeCheck(String pinCode) {
+        return this.pinCode.equals(pinCode);
+    }
 }
 
