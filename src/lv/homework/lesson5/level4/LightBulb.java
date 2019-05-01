@@ -2,7 +2,7 @@ package lv.homework.lesson5.level4;
 
 public class LightBulb {
     private boolean turnedOn = false;
-    private int currentTurnOnCount;
+    private int currentTurnOnCount = 0;
     private int MAX_TURN_ON_COUNT = 5;
 
     public boolean isTurnedon() {
