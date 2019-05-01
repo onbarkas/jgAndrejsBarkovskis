@@ -1,4 +1,4 @@
-package lv.homework.lesson6;
+package lv.homework.lesson6.level3;
 
 public class PowerCalculatorTest {
     public static void main(String[] args) {

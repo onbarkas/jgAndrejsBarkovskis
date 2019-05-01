@@ -1,4 +1,19 @@
-package lv.homework.lesson6;
+package lv.homework.lesson6.level3;
+
+class PowerCalculator {
+    int pow(int number, int power) {
+        int sum = 1;
+        if (number > 0 && power > 0) {
+            for (int i = 1; i <= power; i++) {
+                sum *= number;
+            }
+        }
+        return sum;
+    }
+}
+
+
+/*package lv.homework.lesson6.level3;
 
 public class PowerCalculator {
     //šādu stāvokli nevajag glabāt, jo tas mainās atkarībā no iedotajiem lielumiem metodei
@@ -24,4 +39,4 @@ public class PowerCalculator {
         }
 
     }
-}
+}*/
