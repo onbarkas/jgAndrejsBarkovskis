@@ -2,8 +2,9 @@ package lv.homework.lesson6.level3;
 
 class PowerCalculator {
     int pow(int number, int power) {
-        int sum = 1;
+        int sum = 0;
         if (number > 0 && power > 0) {
+            sum++;
             for (int i = 1; i <= power; i++) {
                 sum *= number;
             }
