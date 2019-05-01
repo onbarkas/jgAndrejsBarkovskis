@@ -1,4 +1,48 @@
-package lv.homework.lesson6;
+package lv.homework.lesson6.level1;
+
+class NumberService {
+
+    int sumInRange(int a, int b) {
+        int sum = 0;
+        if (a == b) {
+            sum = 0;
+        } else if (a < b) {
+            for (int i = a; i <= b; i++) {
+                sum = i + sum;
+            }
+        } else {
+            for (int i = a; i >= b; i--) {
+                sum = i + sum;
+            }
+        }
+        return sum;
+    }
+
+    void getEvenNumberCount(int a, int b) {
+        if (a == b) {
+            System.out.println("inputs cant be the same");
+        } else if (a < b) {
+            for (int i = a; i <= b; i++) {
+                if (evenNumbers(i)) continue;
+                System.out.format("%5d", i);
+            }
+        } else {
+            for (int i = a; i >= b; i--) {
+                if (evenNumbers(i)) continue;
+                System.out.format("%5d", i);
+            }
+        }
+
+    }
+
+    private boolean evenNumbers(int i) {
+        return (i % 2 != 0);
+    }
+}
+
+
+/*
+package lv.homework.lesson6.level1;
 
 public class NumberService {
     int sum; //šim ir jābūt lokālajam mainīgajam, jo attiecās tikai uz vienu metodi
@@ -43,4 +87,4 @@ public class NumberService {
         }
 
     }
-}
+}*/
