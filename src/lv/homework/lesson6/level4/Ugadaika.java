@@ -1,4 +1,4 @@
-package lv.homework.lesson6;
+package lv.homework.lesson6.level4;
 
 import java.util.Random;
 import java.util.Scanner;
