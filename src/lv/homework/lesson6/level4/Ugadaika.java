@@ -22,30 +22,18 @@ class Ugadaika {
             System.out.println("Ievadiet numuru no 1 lidz 100");
             scannerInt();
         }
-        while ((inputInt < 0) || (inputInt > 100)); //par daudz iekavu
+        while (inputInt < 0 || inputInt > 100);
     }
 
     private void checkLoop() {
         do {
             System.out.println("ievadiet, skaitlis ir lielaks, vienads vai mazaks");
             scannerString();
-
-            //lietojam konstrukciju if-else if-else, jo var bū vai nu viens stāvoklis vai otrs
-/*            if (inputString.equals("lielaks")) {
-                randomNumber = randomGenerator.nextInt((rangeMax - inputInt) + 1) + inputInt; //izsaucam metodi
-                System.out.println(randomNumber);
-            }
-
-            if (inputString.equals("mazaks")) {
-                randomNumber = randomGenerator.nextInt((inputInt - 0) + 1) + 0; //izsaucam metodi
-                System.out.println(randomNumber);
-            }*/
-
             if (inputString.equals("lielaks")) {
-                randomNumber = randomGenerator.nextInt((rangeMax - inputInt) + 1) + inputInt; //izsaucam metodi
+                randomNumber = randomGenerator.nextInt((rangeMax - inputInt) + 1) + inputInt;
                 System.out.println(randomNumber);
             } else if (inputString.equals("mazaks")) {
-                randomNumber();
+                randomNumber2();
             }
 
             inputInt = randomNumber;
@@ -54,7 +42,12 @@ class Ugadaika {
     }
 
     private void randomNumber() {
-        randomNumber = randomGenerator.nextInt((inputInt) + 1);
+        randomNumber = randomGenerator.nextInt((rangeMax) + 1);
+        System.out.println(randomNumber);
+    }
+
+    private void randomNumber2() {
+        randomNumber = randomGenerator.nextInt((randomNumber) + 1);
         System.out.println(randomNumber);
     }
 
@@ -65,6 +58,16 @@ class Ugadaika {
     private void scannerString() {
         inputString = scanner.next();
     }
-
-
 }
+
+
+//lietojam konstrukciju if-else if-else, jo var bū vai nu viens stāvoklis vai otrs
+/*            if (inputString.equals("lielaks")) {
+                randomNumber = randomGenerator.nextInt((rangeMax - inputInt) + 1) + inputInt; //izsaucam metodi
+                System.out.println(randomNumber);
+            }
+
+            if (inputString.equals("mazaks")) {
+                randomNumber = randomGenerator.nextInt((inputInt - 0) + 1) + 0; //izsaucam metodi
+                System.out.println(randomNumber);
+            }*/
