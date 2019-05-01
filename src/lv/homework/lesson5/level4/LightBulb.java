@@ -30,8 +30,8 @@ public class LightBulb {
     }
 
     public void turnOn(){
-        if (this.getMAX_TURN_ON_COUNT() > 0) {
-            this.turnedOn = true;
+        if (MAX_TURN_ON_COUNT > 0) {
+            turnedOn = true;
             MAX_TURN_ON_COUNT--;
             currentTurnOnCount++;
         }
