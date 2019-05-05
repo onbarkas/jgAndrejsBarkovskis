@@ -60,7 +60,7 @@ public class LightColorDetectorTest {
 }
 
 
-/*package lv.homework.lesson4.level1;
+/*package lv.homework.lesson4.level1andLevel2;
 
 public class LightColorDetectorTest {
     public static void main(String[] args) {
