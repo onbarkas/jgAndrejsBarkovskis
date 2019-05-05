@@ -1,5 +1,5 @@
 /*
-package lv.homework.lesson9.level1;
+package lv.homework.lesson9.level1andLevel2;
 
 import java.util.Set;
 import java.util.HashSet;
