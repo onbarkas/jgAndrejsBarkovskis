@@ -42,7 +42,7 @@ class NumberService {
 
 
 /*
-package lv.homework.lesson6.level1;
+package lv.homework.lesson6.level1andLevel2;
 
 public class NumberService {
     int sum; //šim ir jābūt lokālajam mainīgajam, jo attiecās tikai uz vienu metodi
