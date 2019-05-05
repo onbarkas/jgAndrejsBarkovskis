@@ -1,7 +1,59 @@
-package lv.homework.lesson7;
+package lv.homework.lesson7.level1;
 
 import java.util.Arrays;
 import java.util.Random;
+
+class ArrayService {
+    private Random randomGenerator = new Random();
+    private int[] array1d;
+    private int sumInArray;
+
+    void create() {
+        array1d = new int[randomGenerator.nextInt(10)];
+    }
+
+    void fillArrayWithRandomNumbers() {
+        for (int i = 0; i < array1d.length; i++) {
+            array1d[i] = randomGenerator.nextInt(100);
+        }
+    }
+
+    void printArrayToConsole() {
+
+        for (int value : array1d) {
+            System.out.println(value);
+        }
+    }
+
+    void sumInArray() {
+
+        for (int value : array1d) {
+            sumInArray = value + sumInArray;
+        }
+        System.out.println("\nSum in array " + sumInArray + "\n");
+    }
+
+    void sortArray() {
+        Arrays.sort(array1d);
+    }
+
+    void swap() {
+        for (int i = 0; i < array1d.length; i++) {
+            array1d[i] = -array1d[i];
+        }
+        Arrays.sort(array1d);
+        for (int i = 0; i < array1d.length; i++) {
+            array1d[i] = -array1d[i];
+        }
+    }
+
+}
+
+
+/*package lv.homework.lesson7.level1;
+
+        import java.util.Arrays;
+        import java.util.Random;
 
 class ArrayService {
     Random randomGenerator = new Random();
@@ -24,9 +76,9 @@ class ArrayService {
         for (int value : array1d) {
             System.out.println(value);
 
-/*        System.out.println();
+*//*        System.out.println();
         for (int i = 0; i < array1d.length; i++) {
-            System.out.print(array1d[i] + " ");*/
+            System.out.print(array1d[i] + " ");*//*
         }
 
         //labak šādi
@@ -42,10 +94,10 @@ class ArrayService {
         }
         System.out.println("\nSum in array " + sumInArray + "\n");
 
-/*        for (int i = 0; i < array1d.length; i++) { //for(int val : array1d) {
+*//*        for (int i = 0; i < array1d.length; i++) { //for(int val : array1d) {
             sumInArray = array1d[i] + sumInArray;//sumInArray += array1d[i]
         }
-        System.out.println("\nSum in array " + sumInArray);*/
+        System.out.println("\nSum in array " + sumInArray);*//*
     }
 
     void sortArray() {
@@ -62,5 +114,5 @@ class ArrayService {
         }
     }
 
-}
+}*/
 
