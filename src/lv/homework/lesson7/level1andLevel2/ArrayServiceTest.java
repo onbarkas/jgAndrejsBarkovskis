@@ -1,4 +1,4 @@
-package lv.homework.lesson7.level1;
+package lv.homework.lesson7.level1andLevel2;
 
 public class ArrayServiceTest {
     public static void main(String[] args) {

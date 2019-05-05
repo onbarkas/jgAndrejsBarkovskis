@@ -1,4 +1,4 @@
-package lv.homework.lesson7.level1;
+package lv.homework.lesson7.level1andLevel2;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -50,7 +50,7 @@ class ArrayService {
 }
 
 
-/*package lv.homework.lesson7.level1;
+/*package lv.homework.lesson7.level1andLevel2;
 
         import java.util.Arrays;
         import java.util.Random;
